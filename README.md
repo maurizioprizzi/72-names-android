@@ -57,9 +57,12 @@ Dependency injection via Hilt.
 - Updated `libs.versions.toml` with all project dependencies
   (Hilt, Room, Navigation Compose, DataStore, Coroutines, Serialization)
 - Updated `build.gradle.kts` (root and app module)
-- Upgraded compileSdk and targetSdk to 36
+- Fixed dependency versions for compatibility with AGP 8.8.0
+- compileSdk = 35, targetSdk = 35
 - Created Clean Architecture package structure (domain, data, ui, di)
-- Created first domain models: `SacredName`, `DailyInsight`, `UserProfile`
+- Created domain models: `SacredName`, `DailyInsight`, `UserProfile`
+- Created repository interfaces: `SacredNameRepository`, `UserProfileRepository`
+- Created UseCases: `GetDailyNameUseCase`, `GetAllNamesUseCase`, `GetNameByNumberUseCase`
 - Established rule: always create/edit files via Android Studio, not terminal
 
 ---
