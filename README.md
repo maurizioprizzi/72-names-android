@@ -7,11 +7,12 @@ Built with Kotlin, Jetpack Compose, Clean Architecture, MVVM.
 
 ## 📱 Features (roadmap)
 
-- Navigate all 72 Names with meditation texts
+- Navigate all 72 Names with meditation texts (8 per page, swipe navigation)
+- Search by meaning or transliteration
 - Daily name suggestion based on the Kabbalistic calendar
 - Birth date profile with personal insights
 - Share meditations with others
-- Multi-language support (PT, EN, ES, FR, IT, DE)
+- Multi-language support (PT, EN, ES, FR, IT, DE) via pre-translated JSON assets
 
 ---
 
@@ -39,6 +40,52 @@ Dependency injection via Hilt.
 | Navigation | Navigation Compose |
 | Min SDK | API 26 (Android 8.0) |
 | Compile SDK | API 35 |
+
+---
+
+## 📁 Project structure
+
+```
+app/src/main/
+├── assets/
+│   └── sacred_names_pt.json
+├── java/com/nomes72/app/
+│   ├── data/
+│   │   ├── local/
+│   │   │   ├── dao/SacredNameDao.kt
+│   │   │   ├── entity/SacredNameEntity.kt
+│   │   │   └── NamesDatabase.kt
+│   │   └── repository/
+│   │       ├── SacredNameRepositoryImpl.kt
+│   │       └── UserProfileRepositoryImpl.kt
+│   ├── di/
+│   │   ├── DatabaseModule.kt
+│   │   ├── DataStoreModule.kt
+│   │   └── RepositoryModule.kt
+│   ├── domain/
+│   │   ├── model/
+│   │   │   ├── DailyInsight.kt
+│   │   │   ├── SacredName.kt
+│   │   │   └── UserProfile.kt
+│   │   ├── repository/
+│   │   │   ├── SacredNameRepository.kt
+│   │   │   └── UserProfileRepository.kt
+│   │   └── usecase/
+│   │       ├── GetAllNamesUseCase.kt
+│   │       ├── GetDailyNameUseCase.kt
+│   │       └── GetNameByNumberUseCase.kt
+│   ├── ui/
+│   │   ├── screen/
+│   │   │   ├── HomeScreen.kt
+│   │   │   └── HomeViewModel.kt
+│   │   └── theme/
+│   │       ├── Color.kt
+│   │       ├── Theme.kt
+│   │       └── Type.kt
+│   ├── MainActivity.kt
+│   └── NomesApp.kt
+└── res/
+```
 
 ---
 
@@ -73,6 +120,7 @@ Dependency injection via Hilt.
 - Created `SacredNameDao` (getAllNames, getByNumber, insertAll, count)
 - Created `SacredNameRepositoryImpl` (loads JSON on first run, Room as cache)
 - Created `sacred_names_pt.json` asset with all 72 Names in Portuguese
+- Revised JSON: refined meanings, meditations and attributes for consistency
 
 ### ✅ Day 4 — 2026-04-11
 - Created `NamesDatabase` (Room database class)
@@ -84,6 +132,8 @@ Dependency injection via Hilt.
 - Created `HomeViewModel` with StateFlow, search filtering, pagination (8 per page)
 - Created `HomeScreen` with HorizontalPager (swipe), search bar, name cards
 - Updated `MainActivity` to display `HomeScreen`
+- Fixed JSON asset location: moved from `data/assets/` to `app/src/main/assets/`
+- First successful run on physical device
 
 ### 🔜 Day 6
 - Create `DetailScreen` — meditation view for a single Name
