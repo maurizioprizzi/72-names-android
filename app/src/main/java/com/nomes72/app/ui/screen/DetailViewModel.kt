@@ -14,7 +14,9 @@ import javax.inject.Inject
 data class DetailUiState(
     val name: SacredName? = null,
     val isLoading: Boolean = true,
-    val error: String? = null
+    val error: String? = null,
+    val hasPrevious: Boolean = false,
+    val hasNext: Boolean = false
 )
 
 @HiltViewModel
@@ -26,18 +28,23 @@ class DetailViewModel @Inject constructor(
     private val _uiState = MutableStateFlow(DetailUiState())
     val uiState: StateFlow<DetailUiState> = _uiState
 
+    private var currentNumber: Int = savedStateHandle.get<Int>("nameNumber") ?: 1
+
     init {
-        val number = savedStateHandle.get<Int>("nameNumber") ?: 1
-        loadName(number)
+        loadName(currentNumber)
     }
 
     private fun loadName(number: Int) {
         viewModelScope.launch {
+            _uiState.value = DetailUiState(isLoading = true)
             try {
                 val name = getNameByNumberUseCase(number)
+                currentNumber = number
                 _uiState.value = DetailUiState(
                     name = name,
-                    isLoading = false
+                    isLoading = false,
+                    hasPrevious = number > 1,
+                    hasNext = number < 72
                 )
             } catch (e: Exception) {
                 _uiState.value = DetailUiState(
@@ -46,6 +53,14 @@ class DetailViewModel @Inject constructor(
                 )
             }
         }
+    }
+
+    fun onPrevious() {
+        if (currentNumber > 1) loadName(currentNumber - 1)
+    }
+
+    fun onNext() {
+        if (currentNumber < 72) loadName(currentNumber + 1)
     }
 
     fun getShareText(): String {
