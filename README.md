@@ -66,11 +66,13 @@ Dependency injection via Hilt.
 - Created UseCases: `GetDailyNameUseCase`, `GetAllNamesUseCase`, `GetNameByNumberUseCase`
 - Established rule: always create/edit files via Android Studio, not terminal
 
-### 🔜 Day 3 — next session
-- Create `Application` class with Hilt (`@HiltAndroidApp`)
-- Create first JSON asset with all 72 Names in Portuguese
-- Implement `SacredNameRepositoryImpl` in the data layer
-- Create `SacredNameDao` for Room
+### ✅ Day 3 — 2026-04-11
+- Created `NomesApp` class with `@HiltAndroidApp`
+- Added `@AndroidEntryPoint` to `MainActivity`
+- Created `SacredNameEntity` (Room entity with `||` separator for attributes)
+- Created `SacredNameDao` (getAllNames, getByNumber, insertAll, count)
+- Created `SacredNameRepositoryImpl` (loads JSON on first run, Room as cache)
+- Created `sacred_names_pt.json` asset with all 72 Names in Portuguese
 
 ### 🔜 Day 4
 - Create Room database class (`NamesDatabase`)
