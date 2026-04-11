@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # 🔯 72 Names — Kabbalistic Meditation App
 
 Android app for Kabbalistic meditation on the 72 Names of God.
@@ -54,7 +53,15 @@ Dependency injection via Hilt.
 - Connected project to GitHub via SSH
 - First commit: initial project setup
 
+### Day 2 — 2026-04-11
+- Updated `libs.versions.toml` with all project dependencies
+  (Hilt, Room, Navigation Compose, DataStore, Coroutines, Serialization)
+- Updated `build.gradle.kts` (root and app module)
+- Upgraded compileSdk and targetSdk to 36
+- Created Clean Architecture package structure (domain, data, ui, di)
+- Created first domain models: `SacredName`, `DailyInsight`, `UserProfile`
+- Established rule: always create/edit files via Android Studio, not terminal
+
 ---
 
 *Built with intention. One day at a time.* 🌟
-EOF
