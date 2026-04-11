@@ -74,10 +74,11 @@ Dependency injection via Hilt.
 - Created `SacredNameRepositoryImpl` (loads JSON on first run, Room as cache)
 - Created `sacred_names_pt.json` asset with all 72 Names in Portuguese
 
-### 🔜 Day 4
-- Create Room database class (`NamesDatabase`)
-- Implement `UserProfileRepositoryImpl` with DataStore
-- Create Hilt modules for dependency injection
+### ✅ Day 4 — 2026-04-11
+- Created `NamesDatabase` (Room database class)
+- Created `UserProfileRepositoryImpl` with DataStore
+- Created Hilt modules: `DatabaseModule`, `DataStoreModule`, `RepositoryModule`
+- Fixed `getAllNames()` to call `ensureDataLoaded()` before emitting
 
 ### 🔜 Day 5
 - Create `HomeViewModel` with StateFlow
