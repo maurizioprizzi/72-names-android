@@ -1,0 +1,722 @@
+[
+  {
+    "number": 1,
+    "hebrewLetters": "והו",
+    "transliteration": "Vav He Vav",
+    "meaning": "Presença Divina",
+    "meditation": "Ao meditar sobre estas letras, você se conecta com a presença infinita do Criador. Permita que a luz divina preencha cada parte do seu ser, dissolvendo a ilusão de separação entre você e a Fonte.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Presença de Deus", "Conexão espiritual", "Dissolução do ego"],
+    "angelName": "Vehuiah"
+  },
+  {
+    "number": 2,
+    "hebrewLetters": "ילי",
+    "transliteration": "Yod Lamed Yod",
+    "meaning": "Recomeço",
+    "meditation": "Estas letras trazem a energia do recomeço. Medite sobre a capacidade de abandonar velhos padrões e iniciar um novo ciclo. Cada momento é uma oportunidade de renascimento espiritual.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Renovação", "Força de vontade", "Novos começos"],
+    "angelName": "Yeliel"
+  },
+  {
+    "number": 3,
+    "hebrewLetters": "סיט",
+    "transliteration": "Samech Yod Tet",
+    "meaning": "Construir um Vaso",
+    "meditation": "Medite sobre a construção de um vaso espiritual capaz de receber e conter a luz. Sem um vaso adequado, a abundância escapa. Fortaleça sua capacidade de receber com humildade e gratidão.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Receptividade", "Estrutura interior", "Abundância"],
+    "angelName": "Sitael"
+  },
+  {
+    "number": 4,
+    "hebrewLetters": "עלם",
+    "transliteration": "Ayin Lamed Mem",
+    "meaning": "Eliminar Pensamentos Negativos",
+    "meditation": "Estas letras são uma ferramenta poderosa para purificar a mente. Ao meditar, visualize os pensamentos negativos se dissolvendo como névoa diante do sol. Substitua cada sombra por luz e clareza.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Purificação mental", "Pensamento positivo", "Clareza"],
+    "angelName": "Elemiah"
+  },
+  {
+    "number": 5,
+    "hebrewLetters": "מהש",
+    "transliteration": "Mem He Shin",
+    "meaning": "Cura",
+    "meditation": "A energia destas letras promove cura em todos os níveis — físico, emocional e espiritual. Medite visualizando uma luz curativa envolvendo cada célula do seu corpo e cada camada da sua alma.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Cura física", "Cura emocional", "Restauração"],
+    "angelName": "Mahasiah"
+  },
+  {
+    "number": 6,
+    "hebrewLetters": "ללה",
+    "transliteration": "Lamed Lamed He",
+    "meaning": "Poder do Sonho",
+    "meditation": "Estas letras conectam você ao mundo dos sonhos como portal de sabedoria. Medite antes de dormir para receber orientação espiritual durante o sono. Os sonhos são mensagens da alma.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Sonhos proféticos", "Intuição noturna", "Sabedoria oculta"],
+    "angelName": "Lelahel"
+  },
+  {
+    "number": 7,
+    "hebrewLetters": "אכא",
+    "transliteration": "Alef Kaf Alef",
+    "meaning": "Conexão com o DNA Espiritual",
+    "meditation": "Medite sobre estas letras para acessar seu potencial espiritual mais profundo. Assim como o DNA carrega a informação biológica, seu DNA espiritual contém o plano divino para sua vida.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Potencial interior", "Propósito de vida", "Autoconhecimento"],
+    "angelName": "Achaiah"
+  },
+  {
+    "number": 8,
+    "hebrewLetters": "כהת",
+    "transliteration": "Kaf He Tav",
+    "meaning": "Desafiar a Natureza Reativa",
+    "meditation": "Estas letras ajudam a transcender as reações automáticas. Medite para criar um espaço entre estímulo e resposta, onde reside a verdadeira liberdade. Escolha agir em vez de reagir.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Autocontrole", "Proatividade", "Liberdade interior"],
+    "angelName": "Cahethel"
+  },
+  {
+    "number": 9,
+    "hebrewLetters": "הזי",
+    "transliteration": "He Zayin Yod",
+    "meaning": "Aniquilar as Forças Negativas",
+    "meditation": "Medite para fortalecer sua capacidade de reconhecer e neutralizar influências negativas em sua vida. A luz destas letras funciona como um escudo protetor contra energias densas.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Proteção espiritual", "Discernimento", "Força contra o mal"],
+    "angelName": "Haziel"
+  },
+  {
+    "number": 10,
+    "hebrewLetters": "אלד",
+    "transliteration": "Alef Lamed Dalet",
+    "meaning": "Proteção contra o Mau-Olhado",
+    "meditation": "Estas letras geram um campo de proteção ao seu redor. Medite para se blindar contra inveja, ciúme e energias negativas direcionadas a você. A melhor proteção é a luz interior.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Proteção", "Escudo espiritual", "Defesa contra inveja"],
+    "angelName": "Aladiah"
+  },
+  {
+    "number": 11,
+    "hebrewLetters": "לאו",
+    "transliteration": "Lamed Alef Vav",
+    "meaning": "Banir a Maldade",
+    "meditation": "Medite sobre estas letras para remover a negatividade do seu caminho. Visualize a luz purificando cada espaço que você ocupa e cada relação que mantém. O mal não resiste à luz verdadeira.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Purificação", "Remoção do mal", "Limpeza energética"],
+    "angelName": "Lauviah"
+  },
+  {
+    "number": 12,
+    "hebrewLetters": "ההע",
+    "transliteration": "He He Ayin",
+    "meaning": "Visão Incondicional",
+    "meditation": "Estas letras abrem os olhos da alma para enxergar além das aparências. Medite para desenvolver uma visão que não julga, que vê a centelha divina em cada pessoa e situação.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Visão espiritual", "Não julgamento", "Compaixão"],
+    "angelName": "Hahaiah"
+  },
+  {
+    "number": 13,
+    "hebrewLetters": "יזל",
+    "transliteration": "Yod Zayin Lamed",
+    "meaning": "Céu na Terra",
+    "meditation": "Medite para trazer a energia celestial para o plano material. Estas letras ajudam a manifestar o paraíso em sua vida cotidiana, transformando cada ação comum em um ato sagrado.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Manifestação", "Sacralidade do cotidiano", "Elevação"],
+    "angelName": "Yezalel"
+  },
+  {
+    "number": 14,
+    "hebrewLetters": "מבה",
+    "transliteration": "Mem Bet He",
+    "meaning": "Amor Incondicional",
+    "meditation": "Estas letras canalizam a frequência do amor puro e incondicional. Medite para abrir seu coração sem medo, amando sem esperar nada em troca. O amor verdadeiro é a força mais poderosa do universo.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Amor puro", "Abertura do coração", "Generosidade"],
+    "angelName": "Mebahel"
+  },
+  {
+    "number": 15,
+    "hebrewLetters": "הרי",
+    "transliteration": "He Resh Yod",
+    "meaning": "Visão de Longo Alcance",
+    "meditation": "Medite sobre estas letras para desenvolver a capacidade de ver as consequências de longo prazo de suas ações. Amplie sua perspectiva além do imediato e conecte-se com o plano maior.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Visão estratégica", "Sabedoria", "Perspectiva ampla"],
+    "angelName": "Hariel"
+  },
+  {
+    "number": 16,
+    "hebrewLetters": "הקם",
+    "transliteration": "He Kuf Mem",
+    "meaning": "Livrar-se da Escravidão",
+    "meditation": "Estas letras trazem libertação de todas as formas de escravidão — vícios, padrões destrutivos, relacionamentos tóxicos. Medite para quebrar as correntes invisíveis que limitam sua alma.",
+    "torahVerse": "Êxodo 14:19",
+    "attributes": ["Libertação", "Quebra de padrões", "Independência"],
+    "angelName": "Hekamiah"
+  },
+  {
+    "number": 17,
+    "hebrewLetters": "לאו",
+    "transliteration": "Lamed Alef Vav",
+    "meaning": "A Grande Escapada",
+    "meditation": "Medite sobre estas letras quando sentir que está preso em uma situação sem saída. A energia destas letras abre caminhos onde não havia nenhum e revela soluções ocultas.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Saídas inesperadas", "Soluções criativas", "Esperança"],
+    "angelName": "Lauviah II"
+  },
+  {
+    "number": 18,
+    "hebrewLetters": "כלי",
+    "transliteration": "Kaf Lamed Yod",
+    "meaning": "Fertilidade",
+    "meditation": "Estas letras carregam a energia da criação e da fertilidade em todos os níveis. Medite para dar vida a novos projetos, ideias e possibilidades. A criatividade é uma expressão da força divina.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Criatividade", "Fertilidade", "Novos projetos"],
+    "angelName": "Caliel"
+  },
+  {
+    "number": 19,
+    "hebrewLetters": "לוו",
+    "transliteration": "Lamed Vav Vav",
+    "meaning": "Expulsar a Arrogância",
+    "meditation": "Medite para reconhecer e dissolver o ego inflado. A arrogância é a cortina que separa a alma da luz. Estas letras ajudam a cultivar humildade genuína sem perder a autoestima.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Humildade", "Dissolução do ego", "Autenticidade"],
+    "angelName": "Leuviah"
+  },
+  {
+    "number": 20,
+    "hebrewLetters": "פהל",
+    "transliteration": "Pe He Lamed",
+    "meaning": "Vitória sobre os Vícios",
+    "meditation": "Estas letras oferecem força para superar dependências e comportamentos autodestrutivos. Medite para fortalecer sua vontade e encontrar a raiz espiritual dos seus vícios.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Superação", "Força de vontade", "Autodomínio"],
+    "angelName": "Pahaliah"
+  },
+  {
+    "number": 21,
+    "hebrewLetters": "נלך",
+    "transliteration": "Nun Lamed Kaf",
+    "meaning": "Eliminar o Ciúme",
+    "meditation": "O ciúme é um veneno que corrói a alma. Medite sobre estas letras para transformar inveja em admiração e ciúme em gratidão pelo que você já possui. Cada pessoa tem seu próprio caminho.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Gratidão", "Contentamento", "Eliminação do ciúme"],
+    "angelName": "Nelchael"
+  },
+  {
+    "number": 22,
+    "hebrewLetters": "ייי",
+    "transliteration": "Yod Yod Yod",
+    "meaning": "Parar de Fatalidade",
+    "meditation": "Estas letras quebram a crença de que o destino é imutável. Medite para despertar o poder de escolha e livre-arbítrio. Você não é vítima das circunstâncias — é cocriador da sua realidade.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Livre-arbítrio", "Poder de escolha", "Autonomia"],
+    "angelName": "Yeiayel"
+  },
+  {
+    "number": 23,
+    "hebrewLetters": "מלה",
+    "transliteration": "Mem Lamed He",
+    "meaning": "Compartilhar a Luz",
+    "meditation": "Medite sobre o poder de compartilhar. Estas letras ensinam que quanto mais você dá, mais recebe. A verdadeira riqueza espiritual vem do ato de compartilhar sem expectativas.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Generosidade", "Compartilhamento", "Altruísmo"],
+    "angelName": "Melahel"
+  },
+  {
+    "number": 24,
+    "hebrewLetters": "חהו",
+    "transliteration": "Chet He Vav",
+    "meaning": "Ciúme",
+    "meditation": "Estas letras transformam a energia do ciúme em combustível para crescimento pessoal. Medite para reconhecer quando o ciúme surge e usá-lo como espelho para identificar seus desejos mais profundos.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Autoconhecimento", "Transformação emocional", "Maturidade"],
+    "angelName": "Haheuiah"
+  },
+  {
+    "number": 25,
+    "hebrewLetters": "נתה",
+    "transliteration": "Nun Tav He",
+    "meaning": "Falar com Propósito",
+    "meditation": "As palavras criam realidades. Medite sobre estas letras para purificar sua fala, eliminando fofocas, mentiras e palavras negativas. Use o poder da palavra para construir, não para destruir.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Poder da palavra", "Fala consciente", "Integridade verbal"],
+    "angelName": "Nithaiah"
+  },
+  {
+    "number": 26,
+    "hebrewLetters": "האא",
+    "transliteration": "He Alef Alef",
+    "meaning": "Ordem a partir do Caos",
+    "meditation": "Quando tudo parece desordenado e confuso, medite sobre estas letras. Elas trazem a energia da organização divina, ajudando a encontrar sentido no caos e direção na confusão.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Organização", "Clareza no caos", "Ordem divina"],
+    "angelName": "Haaiah"
+  },
+  {
+    "number": 27,
+    "hebrewLetters": "ירת",
+    "transliteration": "Yod Resh Tav",
+    "meaning": "Banir a Energia Negativa do Silêncio",
+    "meditation": "O silêncio pode ser sagrado ou tóxico. Medite sobre estas letras para distinguir o silêncio contemplativo do silêncio que esconde verdades. Aprenda quando falar e quando calar.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Discernimento", "Silêncio sagrado", "Coragem de falar"],
+    "angelName": "Yerathel"
+  },
+  {
+    "number": 28,
+    "hebrewLetters": "שאה",
+    "transliteration": "Shin Alef He",
+    "meaning": "Alma Gêmea",
+    "meditation": "Estas letras ajudam a atrair e reconhecer sua alma gêmea. Medite não para encontrar alguém perfeito, mas para se tornar a pessoa certa. A alma gêmea é um espelho espiritual.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Relacionamentos", "Alma gêmea", "Amor verdadeiro"],
+    "angelName": "Seheiah"
+  },
+  {
+    "number": 29,
+    "hebrewLetters": "ריי",
+    "transliteration": "Resh Yod Yod",
+    "meaning": "Libertar do Ódio Sem Causa",
+    "meditation": "O ódio sem razão é o câncer da alma. Medite sobre estas letras para libertar-se de ressentimentos antigos e rancores que não servem mais. Perdoar é libertar a si mesmo.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Perdão", "Liberação do ódio", "Paz interior"],
+    "angelName": "Reyiel"
+  },
+  {
+    "number": 30,
+    "hebrewLetters": "אום",
+    "transliteration": "Alef Vav Mem",
+    "meaning": "Construir Pontes",
+    "meditation": "Estas letras ensinam a arte de conectar mundos diferentes. Medite para desenvolver a capacidade de unir pessoas, ideias e perspectivas opostas. Seja uma ponte, não um muro.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["União", "Diplomacia", "Conexão entre opostos"],
+    "angelName": "Omael"
+  },
+  {
+    "number": 31,
+    "hebrewLetters": "לכב",
+    "transliteration": "Lamed Kaf Bet",
+    "meaning": "Acabar com o Ciclo de Morte",
+    "meditation": "Medite sobre a eternidade da alma. Estas letras ajudam a transcender o medo da morte e a compreender que a vida é um ciclo contínuo de transformação. O que morre é a ilusão, não a essência.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Transcendência", "Superação do medo", "Eternidade"],
+    "angelName": "Lecabel"
+  },
+  {
+    "number": 32,
+    "hebrewLetters": "ושר",
+    "transliteration": "Vav Shin Resh",
+    "meaning": "Memória",
+    "meditation": "Estas letras ativam a memória da alma — não apenas a memória intelectual, mas a lembrança do seu propósito divino. Medite para recordar quem você realmente é além das máscaras do ego.",
+    "torahVerse": "Êxodo 14:20",
+    "attributes": ["Memória espiritual", "Propósito", "Lembrança divina"],
+    "angelName": "Vasariah"
+  },
+  {
+    "number": 33,
+    "hebrewLetters": "יחו",
+    "transliteration": "Yod Chet Vav",
+    "meaning": "Revelar o Oculto",
+    "meditation": "Medite sobre estas letras quando buscar respostas que parecem escondidas. A verdade sempre está presente, apenas encoberta por camadas de ilusão. Estas letras removem os véus.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Revelação", "Verdade oculta", "Insight"],
+    "angelName": "Yehuiah"
+  },
+  {
+    "number": 34,
+    "hebrewLetters": "להח",
+    "transliteration": "Lamed He Chet",
+    "meaning": "Esquecendo de Si Mesmo",
+    "meditation": "O verdadeiro serviço espiritual acontece quando esquecemos do ego. Medite sobre estas letras para transcender o autointeresse e servir ao próximo com pureza de intenção.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Serviço desinteressado", "Altruísmo", "Transcendência do ego"],
+    "angelName": "Lehahiah"
+  },
+  {
+    "number": 35,
+    "hebrewLetters": "כוק",
+    "transliteration": "Kaf Vav Kuf",
+    "meaning": "Energia Sexual Sagrada",
+    "meditation": "A energia sexual é a força criativa mais poderosa. Medite sobre estas letras para elevar e canalizar essa energia para fins espirituais e criativos, transformando desejo em devoção.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Energia criativa", "Transmutação", "Elevação do desejo"],
+    "angelName": "Kevakiah"
+  },
+  {
+    "number": 36,
+    "hebrewLetters": "מנד",
+    "transliteration": "Mem Nun Dalet",
+    "meaning": "Medos Infundados",
+    "meditation": "A maioria dos medos que nos paralisam não são reais. Medite sobre estas letras para distinguir medos legítimos de medos fabricados pela mente. Liberte-se das prisões imaginárias.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Coragem", "Superação do medo", "Confiança"],
+    "angelName": "Menadel"
+  },
+  {
+    "number": 37,
+    "hebrewLetters": "אני",
+    "transliteration": "Alef Nun Yod",
+    "meaning": "A Grande Imagem",
+    "meditation": "Estas letras ajudam a ver a vida de uma perspectiva elevada. Medite para compreender que cada desafio é parte de um plano maior. Quando você vê a grande imagem, os pequenos problemas perdem seu poder.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Perspectiva ampla", "Visão holística", "Confiança no processo"],
+    "angelName": "Aniel"
+  },
+  {
+    "number": 38,
+    "hebrewLetters": "חעם",
+    "transliteration": "Chet Ayin Mem",
+    "meaning": "Circuito da Receptividade",
+    "meditation": "Para receber a luz, é preciso criar um circuito completo: dar e receber em equilíbrio. Medite sobre estas letras para abrir-se à receptividade sem culpa, sabendo que receber com gratidão é tão sagrado quanto dar.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Receptividade", "Equilíbrio dar-receber", "Gratidão"],
+    "angelName": "Haamiah"
+  },
+  {
+    "number": 39,
+    "hebrewLetters": "רהע",
+    "transliteration": "Resh He Ayin",
+    "meaning": "Agulha Diamante",
+    "meditation": "Assim como um diamante corta o vidro, estas letras cortam através das ilusões mais resistentes. Medite para penetrar até o cerne de qualquer situação, revelando a verdade essencial.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Penetração espiritual", "Verdade essencial", "Precisão"],
+    "angelName": "Rehael"
+  },
+  {
+    "number": 40,
+    "hebrewLetters": "ייז",
+    "transliteration": "Yod Yod Zayin",
+    "meaning": "Evolução da Alma",
+    "meditation": "Cada vida é uma oportunidade de evolução espiritual. Medite sobre estas letras para acelerar seu crescimento interior e compreender as lições que sua alma precisa aprender nesta encarnação.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Evolução espiritual", "Crescimento interior", "Aprendizado"],
+    "angelName": "Yeiazel"
+  },
+  {
+    "number": 41,
+    "hebrewLetters": "ההה",
+    "transliteration": "He He He",
+    "meaning": "Auto-Estima",
+    "meditation": "Estas letras restauram o senso de valor próprio. Medite para reconhecer que você foi criado à imagem divina e que seu valor é inerente, não dependente de conquistas externas.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Valor próprio", "Autoestima", "Dignidade"],
+    "angelName": "Hahahel"
+  },
+  {
+    "number": 42,
+    "hebrewLetters": "מיך",
+    "transliteration": "Mem Yod Kaf",
+    "meaning": "Revelação das Trevas",
+    "meditation": "Estas letras revelam a luz escondida dentro da escuridão. Medite para compreender que os momentos mais difíceis contêm as maiores oportunidades de crescimento. Na escuridão, a luz brilha mais forte.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Transformação", "Luz na escuridão", "Resiliência"],
+    "angelName": "Mikael"
+  },
+  {
+    "number": 43,
+    "hebrewLetters": "ווּל",
+    "transliteration": "Vav Vav Lamed",
+    "meaning": "Desafiar a Gravidade",
+    "meditation": "Assim como a gravidade puxa os corpos para baixo, forças espirituais podem nos puxar para padrões negativos. Medite sobre estas letras para elevar-se acima das limitações e voar espiritualmente.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Elevação espiritual", "Superação de limitações", "Leveza"],
+    "angelName": "Veuliah"
+  },
+  {
+    "number": 44,
+    "hebrewLetters": "ילה",
+    "transliteration": "Yod Lamed He",
+    "meaning": "Despejar",
+    "meditation": "Estas letras ajudam a esvaziar-se do excesso — de preocupações, de posses, de apegos desnecessários. Medite para criar espaço interior, pois só um vaso vazio pode ser preenchido com luz nova.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Desapego", "Esvaziamento", "Simplicidade"],
+    "angelName": "Yelahiah"
+  },
+  {
+    "number": 45,
+    "hebrewLetters": "סאל",
+    "transliteration": "Samech Alef Lamed",
+    "meaning": "A Energia do Milagre",
+    "meditation": "Milagres não são eventos sobrenaturais — são a natureza operando além da nossa compreensão limitada. Medite sobre estas letras para abrir-se à possibilidade de milagres em sua vida cotidiana.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Milagres", "Fé", "Possibilidades infinitas"],
+    "angelName": "Sealiah"
+  },
+  {
+    "number": 46,
+    "hebrewLetters": "ערי",
+    "transliteration": "Ayin Resh Yod",
+    "meaning": "Certeza Absoluta",
+    "meditation": "A dúvida é o inimigo da manifestação. Medite sobre estas letras para cultivar certeza inabalável na bondade do Criador e no propósito da sua existência. Certeza não é arrogância — é confiança espiritual.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Certeza", "Fé inabalável", "Confiança divina"],
+    "angelName": "Ariel"
+  },
+  {
+    "number": 47,
+    "hebrewLetters": "עשל",
+    "transliteration": "Ayin Shin Lamed",
+    "meaning": "Conexão Global",
+    "meditation": "Medite sobre a interconexão de toda a humanidade. Estas letras revelam que todos somos células de um único organismo cósmico. O que afeta um, afeta todos.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Unidade", "Consciência global", "Responsabilidade coletiva"],
+    "angelName": "Asaliah"
+  },
+  {
+    "number": 48,
+    "hebrewLetters": "מיה",
+    "transliteration": "Mem Yod He",
+    "meaning": "Unidade",
+    "meditation": "A separação é a maior ilusão. Medite sobre estas letras para dissolver as barreiras entre eu e o outro, entre físico e espiritual, entre humano e divino. Tudo é Um.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Unidade cósmica", "Dissolução da separação", "Integração"],
+    "angelName": "Mihael"
+  },
+  {
+    "number": 49,
+    "hebrewLetters": "והו",
+    "transliteration": "Vav He Vav",
+    "meaning": "Felicidade",
+    "meditation": "A verdadeira felicidade não vem de circunstâncias externas, mas da conexão interior com a luz. Medite sobre estas letras para acessar a fonte de alegria que existe dentro de você, independente do que acontece ao redor.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Alegria interior", "Contentamento", "Felicidade genuína"],
+    "angelName": "Vehuel"
+  },
+  {
+    "number": 50,
+    "hebrewLetters": "דני",
+    "transliteration": "Dalet Nun Yod",
+    "meaning": "Ouvir a Voz Interior",
+    "meditation": "Dentro de cada pessoa existe uma voz silenciosa que conhece o caminho. Medite sobre estas letras para silenciar o ruído mental e ouvir a orientação da sua alma. A resposta está dentro de você.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Intuição", "Voz interior", "Orientação espiritual"],
+    "angelName": "Daniel"
+  },
+  {
+    "number": 51,
+    "hebrewLetters": "החש",
+    "transliteration": "He Chet Shin",
+    "meaning": "Não Há Lugar para o Pânico",
+    "meditation": "O pânico é a ausência de fé. Medite sobre estas letras nos momentos de crise para restaurar a calma interior. Lembre-se: se existe um problema, existe uma solução. O pânico apenas obscurece o caminho.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Calma", "Serenidade na crise", "Fé"],
+    "angelName": "Hahasiah"
+  },
+  {
+    "number": 52,
+    "hebrewLetters": "עמם",
+    "transliteration": "Ayin Mem Mem",
+    "meaning": "Responsabilidade",
+    "meditation": "Estas letras ensinam que você é responsável pela sua realidade. Medite para abandonar a mentalidade de vítima e assumir o poder sobre sua vida. Responsabilidade é a porta da liberdade.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Responsabilidade", "Empoderamento", "Maturidade espiritual"],
+    "angelName": "Imamiah"
+  },
+  {
+    "number": 53,
+    "hebrewLetters": "ננא",
+    "transliteration": "Nun Nun Alef",
+    "meaning": "Sem Ego",
+    "meditation": "O ego é a cortina entre a alma e a luz. Medite sobre estas letras para reduzir a influência do ego sem destruí-lo — ele é necessário, mas não deve governar. A humildade é o caminho.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Humildade", "Redução do ego", "Transparência espiritual"],
+    "angelName": "Nanael"
+  },
+  {
+    "number": 54,
+    "hebrewLetters": "נית",
+    "transliteration": "Nun Yod Tav",
+    "meaning": "Morte do Ego",
+    "meditation": "O ego precisa morrer para que a alma verdadeira nasça. Medite sobre estas letras para permitir a transformação radical do seu ser. Como a fênix, renasça das cinzas do ego.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Transformação radical", "Renascimento", "Morte mística"],
+    "angelName": "Nithael"
+  },
+  {
+    "number": 55,
+    "hebrewLetters": "מבה",
+    "transliteration": "Mem Bet He",
+    "meaning": "Pensando para o Futuro",
+    "meditation": "Estas letras conectam você com a energia do futuro. Medite para plantar sementes hoje que florescerão amanhã. Cada ação presente é um investimento no futuro da sua alma.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Planejamento", "Visão futura", "Semeadura espiritual"],
+    "angelName": "Mebahiah"
+  },
+  {
+    "number": 56,
+    "hebrewLetters": "פוי",
+    "transliteration": "Pe Vav Yod",
+    "meaning": "Despertar o Desejo",
+    "meditation": "O desejo espiritual é o motor da transformação. Medite sobre estas letras para despertar um anseio ardente pela conexão com o divino. Sem desejo, não há crescimento.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Desejo espiritual", "Motivação interior", "Anseio pelo divino"],
+    "angelName": "Poyel"
+  },
+  {
+    "number": 57,
+    "hebrewLetters": "נמם",
+    "transliteration": "Nun Mem Mem",
+    "meaning": "Ouvir com o Coração",
+    "meditation": "Ouvir verdadeiramente é uma arte sagrada. Medite sobre estas letras para desenvolver a escuta profunda — não apenas com os ouvidos, mas com o coração. Quando você ouve de verdade, a cura acontece.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Escuta profunda", "Empatia", "Presença"],
+    "angelName": "Nemamiah"
+  },
+  {
+    "number": 58,
+    "hebrewLetters": "ייל",
+    "transliteration": "Yod Yod Lamed",
+    "meaning": "Abandonar as Agendas Ocultas",
+    "meditation": "Agendas ocultas envenenam relacionamentos e bloqueiam a luz. Medite sobre estas letras para purificar suas intenções, agindo com transparência e honestidade em todas as interações.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Transparência", "Honestidade", "Pureza de intenção"],
+    "angelName": "Yeialel"
+  },
+  {
+    "number": 59,
+    "hebrewLetters": "הרח",
+    "transliteration": "He Resh Chet",
+    "meaning": "Restaurar a Felicidade",
+    "meditation": "A felicidade é seu estado natural. Medite sobre estas letras para remover as camadas de tristeza, decepção e desilusão que cobriram sua alegria original. A felicidade não precisa ser criada — apenas redescoberta.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Restauração da alegria", "Otimismo", "Cura emocional"],
+    "angelName": "Harachel"
+  },
+  {
+    "number": 60,
+    "hebrewLetters": "מצר",
+    "transliteration": "Mem Tsade Resh",
+    "meaning": "Liberdade",
+    "meditation": "A verdadeira liberdade é interior. Medite sobre estas letras para libertar-se das prisões mentais — crenças limitantes, condicionamentos e medos — que impedem sua alma de voar.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Liberdade interior", "Quebra de crenças limitantes", "Expansão"],
+    "angelName": "Mitzrael"
+  },
+  {
+    "number": 61,
+    "hebrewLetters": "ומב",
+    "transliteration": "Vav Mem Bet",
+    "meaning": "Água",
+    "meditation": "A água é símbolo de misericórdia e fluidez. Medite sobre estas letras para desenvolver a capacidade de fluir com a vida, adaptando-se às mudanças como a água se adapta ao recipiente.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Fluidez", "Adaptabilidade", "Misericórdia"],
+    "angelName": "Umabel"
+  },
+  {
+    "number": 62,
+    "hebrewLetters": "יהה",
+    "transliteration": "Yod He He",
+    "meaning": "Pais e Filhos",
+    "meditation": "Estas letras curam relacionamentos familiares, especialmente entre pais e filhos. Medite para compreender a profundidade da conexão familiar e resolver conflitos com amor e sabedoria.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Harmonia familiar", "Cura de relações", "Amor filial"],
+    "angelName": "Iahhel"
+  },
+  {
+    "number": 63,
+    "hebrewLetters": "ענו",
+    "transliteration": "Ayin Nun Vav",
+    "meaning": "Apreciação",
+    "meditation": "A gratidão transforma tudo. Medite sobre estas letras para desenvolver apreço genuíno por cada bênção em sua vida — das maiores às menores. A apreciação multiplica as bênçãos.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Gratidão", "Apreciação", "Reconhecimento"],
+    "angelName": "Anuel"
+  },
+  {
+    "number": 64,
+    "hebrewLetters": "מחי",
+    "transliteration": "Mem Chet Yod",
+    "meaning": "Demolir o Ídolo",
+    "meditation": "Ídolos não são apenas estátuas — são qualquer coisa que colocamos acima do divino: dinheiro, fama, poder. Medite sobre estas letras para identificar e demolir seus ídolos internos.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Desconstrução de ídolos", "Prioridades espirituais", "Verdadeira devoção"],
+    "angelName": "Mehiel"
+  },
+  {
+    "number": 65,
+    "hebrewLetters": "דמב",
+    "transliteration": "Dalet Mem Bet",
+    "meaning": "Conhecer o Inimigo",
+    "meditation": "O maior inimigo é interno — é o ego e a natureza reativa. Medite sobre estas letras para conhecer profundamente seus padrões destrutivos. Conhecer o inimigo é o primeiro passo para vencê-lo.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Autoconhecimento", "Reconhecimento de padrões", "Sabedoria interior"],
+    "angelName": "Damabiah"
+  },
+  {
+    "number": 66,
+    "hebrewLetters": "מנק",
+    "transliteration": "Mem Nun Kuf",
+    "meaning": "Saúde",
+    "meditation": "A saúde verdadeira é equilíbrio entre corpo, mente e alma. Medite sobre estas letras para restaurar a harmonia em todos os níveis do seu ser. A doença muitas vezes é um desequilíbrio espiritual manifesto.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Saúde integral", "Equilíbrio", "Harmonia corpo-mente-alma"],
+    "angelName": "Manakel"
+  },
+  {
+    "number": 67,
+    "hebrewLetters": "איע",
+    "transliteration": "Alef Yod Ayin",
+    "meaning": "Superar a Inércia",
+    "meditation": "A inércia espiritual é tão real quanto a física. Medite sobre estas letras para superar a estagnação e dar o primeiro passo em direção à mudança. O momento mais difícil é o início — depois, o momentum ajuda.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Iniciativa", "Superação da inércia", "Primeiro passo"],
+    "angelName": "Eyael"
+  },
+  {
+    "number": 68,
+    "hebrewLetters": "חבו",
+    "transliteration": "Chet Bet Vav",
+    "meaning": "Comunicação com Propósito",
+    "meditation": "Toda comunicação deveria ter propósito e intenção. Medite sobre estas letras para refinar como se expressa, escolhendo palavras que constroem, inspiram e elevam.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Comunicação consciente", "Expressão elevada", "Palavras de poder"],
+    "angelName": "Habuhiah"
+  },
+  {
+    "number": 69,
+    "hebrewLetters": "ראה",
+    "transliteration": "Resh Alef He",
+    "meaning": "Perdão Total",
+    "meditation": "O perdão verdadeiro é total e incondicional. Medite sobre estas letras para liberar todo ressentimento, mágoa e desejo de vingança. Ao perdoar, você não liberta o outro — liberta a si mesmo.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Perdão incondicional", "Liberação de mágoas", "Paz profunda"],
+    "angelName": "Roehel"
+  },
+  {
+    "number": 70,
+    "hebrewLetters": "יבם",
+    "transliteration": "Yod Bet Mem",
+    "meaning": "Olho do Furacão",
+    "meditation": "No centro de toda tempestade existe um ponto de calma absoluta. Medite sobre estas letras para encontrar seu centro de paz interior, mesmo quando o mundo ao redor está em turbulência.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Paz interior", "Centro de calma", "Estabilidade emocional"],
+    "angelName": "Yabamiah"
+  },
+  {
+    "number": 71,
+    "hebrewLetters": "היי",
+    "transliteration": "He Yod Yod",
+    "meaning": "Profecia e Paralelo",
+    "meditation": "Estas letras abrem canais de percepção elevada. Medite para desenvolver a capacidade de perceber as correntes invisíveis que guiam os eventos e compreender os sinais que o universo envia.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Percepção elevada", "Sinais divinos", "Consciência expandida"],
+    "angelName": "Haiyael"
+  },
+  {
+    "number": 72,
+    "hebrewLetters": "מום",
+    "transliteration": "Mem Vav Mem",
+    "meaning": "Conexão Espiritual Máxima",
+    "meditation": "O último nome completa o ciclo e representa a conexão máxima com a fonte divina. Medite sobre estas letras para alcançar o estado mais elevado de consciência espiritual, onde a alma se funde com o infinito.",
+    "torahVerse": "Êxodo 14:21",
+    "attributes": ["Conexão máxima", "Consciência divina", "Completude"],
+    "angelName": "Mumiah"
+  }
+]
