@@ -1,0 +1,76 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "db33d56527d9231ebe4bfcfe9e49dc02",
+    "entities": [
+      {
+        "tableName": "sacred_names",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`number` INTEGER NOT NULL, `hebrewLetters` TEXT NOT NULL, `transliteration` TEXT NOT NULL, `meaning` TEXT NOT NULL, `meditation` TEXT NOT NULL, `torahVerse` TEXT NOT NULL, `attributes` TEXT NOT NULL, `angelName` TEXT NOT NULL, PRIMARY KEY(`number`))",
+        "fields": [
+          {
+            "fieldPath": "number",
+            "columnName": "number",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hebrewLetters",
+            "columnName": "hebrewLetters",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "transliteration",
+            "columnName": "transliteration",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "meaning",
+            "columnName": "meaning",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "meditation",
+            "columnName": "meditation",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "torahVerse",
+            "columnName": "torahVerse",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "attributes",
+            "columnName": "attributes",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "angelName",
+            "columnName": "angelName",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "number"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'db33d56527d9231ebe4bfcfe9e49dc02')"
+    ]
+  }
+}

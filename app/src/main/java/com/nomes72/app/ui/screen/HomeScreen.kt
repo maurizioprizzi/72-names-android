@@ -42,7 +42,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.nomes72.app.domain.model.SacredName
-import com.nomes72.app.ui.screen.home.HomeViewModel
+import com.nomes72.app.ui.screen.HomeViewModel
 
 @Composable
 fun HomeScreen(

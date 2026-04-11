@@ -80,10 +80,10 @@ Dependency injection via Hilt.
 - Created Hilt modules: `DatabaseModule`, `DataStoreModule`, `RepositoryModule`
 - Fixed `getAllNames()` to call `ensureDataLoaded()` before emitting
 
-### 🔜 Day 5
-- Create `HomeViewModel` with StateFlow
-- Create `HomeScreen` with Jetpack Compose
-- Display list of 72 Names
+### ✅ Day 5 — 2026-04-11
+- Created `HomeViewModel` with StateFlow, search filtering, pagination (8 per page)
+- Created `HomeScreen` with HorizontalPager (swipe), search bar, name cards
+- Updated `MainActivity` to display `HomeScreen`
 
 ### 🔜 Day 6
 - Create `DetailScreen` — meditation view for a single Name
