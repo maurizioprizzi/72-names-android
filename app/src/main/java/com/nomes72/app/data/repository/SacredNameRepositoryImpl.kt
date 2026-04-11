@@ -10,6 +10,8 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
+import kotlinx.coroutines.flow.emitAll
+import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -34,8 +36,11 @@ class SacredNameRepositoryImpl @Inject constructor(
     private val json = Json { ignoreUnknownKeys = true }
 
     override fun getAllNames(): Flow<List<SacredName>> {
-        return dao.getAllNames().map { entities ->
-            entities.map { it.toDomain() }
+        return flow {
+            ensureDataLoaded()
+            emitAll(dao.getAllNames().map { entities ->
+                entities.map { it.toDomain() }
+            })
         }
     }
 
