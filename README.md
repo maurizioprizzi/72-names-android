@@ -30,7 +30,7 @@ Dependency injection via Hilt.
 
 | Layer | Technology |
 |---|---|
-| Language | Kotlin 2.1 |
+| Language | Kotlin 2.0 |
 | UI | Jetpack Compose |
 | Architecture | Clean Architecture + MVVM |
 | DI | Hilt |
@@ -38,12 +38,13 @@ Dependency injection via Hilt.
 | Preferences | DataStore |
 | Navigation | Navigation Compose |
 | Min SDK | API 26 (Android 8.0) |
+| Compile SDK | API 35 |
 
 ---
 
 ## 📓 Production diary
 
-### Day 1 — 2025-04-10
+### ✅ Day 1 — 2026-04-10
 - Defined app concept: 72 Kabbalistic Names meditation app
 - Chose tech stack: Kotlin native, Jetpack Compose, Clean Architecture
 - Decided on pre-translated assets strategy for 6 languages (PT, EN, ES, FR, IT, DE)
@@ -53,7 +54,7 @@ Dependency injection via Hilt.
 - Connected project to GitHub via SSH
 - First commit: initial project setup
 
-### Day 2 — 2026-04-11
+### ✅ Day 2 — 2026-04-11
 - Updated `libs.versions.toml` with all project dependencies
   (Hilt, Room, Navigation Compose, DataStore, Coroutines, Serialization)
 - Updated `build.gradle.kts` (root and app module)
@@ -64,6 +65,57 @@ Dependency injection via Hilt.
 - Created repository interfaces: `SacredNameRepository`, `UserProfileRepository`
 - Created UseCases: `GetDailyNameUseCase`, `GetAllNamesUseCase`, `GetNameByNumberUseCase`
 - Established rule: always create/edit files via Android Studio, not terminal
+
+### 🔜 Day 3 — next session
+- Create `Application` class with Hilt (`@HiltAndroidApp`)
+- Create first JSON asset with all 72 Names in Portuguese
+- Implement `SacredNameRepositoryImpl` in the data layer
+- Create `SacredNameDao` for Room
+
+### 🔜 Day 4
+- Create Room database class (`NamesDatabase`)
+- Implement `UserProfileRepositoryImpl` with DataStore
+- Create Hilt modules for dependency injection
+
+### 🔜 Day 5
+- Create `HomeViewModel` with StateFlow
+- Create `HomeScreen` with Jetpack Compose
+- Display list of 72 Names
+
+### 🔜 Day 6
+- Create `DetailScreen` — meditation view for a single Name
+- Share functionality (share meditation text)
+- Navigation between Home and Detail
+
+### 🔜 Day 7
+- Create `ProfileScreen` — birth date input
+- Personal insight calculation based on birth date
+- Create `ProfileViewModel`
+
+### 🔜 Day 8
+- Kabbalistic calendar engine — daily Name suggestion logic
+- `CalendarScreen` — browse Names by date
+- Daily notification setup
+
+### 🔜 Day 9
+- Multi-language support — load JSON by device locale
+- Add English, Spanish, French, Italian, German translations
+- Locale detection and fallback logic
+
+### 🔜 Day 10
+- UI polish — typography, colors, dark mode
+- App icon and splash screen
+- Accessibility improvements
+
+### 🔜 Day 11
+- Testing — unit tests for UseCases and ViewModels
+- Integration tests for Room
+- Bug fixes
+
+### 🔜 Day 12
+- Play Store preparation — signing, ProGuard, release build
+- Store listing — screenshots, description, icon
+- First internal release 🚀
 
 ---
 
