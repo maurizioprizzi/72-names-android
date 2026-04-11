@@ -8,10 +8,12 @@ Built with Kotlin, Jetpack Compose, Clean Architecture, MVVM.
 ## 📱 Features (roadmap)
 
 - Navigate all 72 Names with meditation texts (8 per page, swipe navigation)
+- Detail view with full meditation, attributes, Torah verse and angel name
+- Navigate between names (previous/next) directly from detail view
 - Search by meaning or transliteration
+- Share meditation texts with others
 - Daily name suggestion based on the Kabbalistic calendar
 - Birth date profile with personal insights
-- Share meditations with others
 - Multi-language support (PT, EN, ES, FR, IT, DE) via pre-translated JSON assets
 
 ---
@@ -75,7 +77,11 @@ app/src/main/
 │   │       ├── GetDailyNameUseCase.kt
 │   │       └── GetNameByNumberUseCase.kt
 │   ├── ui/
+│   │   ├── navigation/
+│   │   │   └── AppNavigation.kt
 │   │   ├── screen/
+│   │   │   ├── DetailScreen.kt
+│   │   │   ├── DetailViewModel.kt
 │   │   │   ├── HomeScreen.kt
 │   │   │   └── HomeViewModel.kt
 │   │   └── theme/
@@ -135,10 +141,12 @@ app/src/main/
 - Fixed JSON asset location: moved from `data/assets/` to `app/src/main/assets/`
 - First successful run on physical device
 
-### 🔜 Day 6
-- Create `DetailScreen` — meditation view for a single Name
-- Share functionality (share meditation text)
-- Navigation between Home and Detail
+### ✅ Day 6 — 2026-04-11
+- Created `DetailScreen` with full meditation view (hebrew letters, transliteration, meaning, angel, meditation text, Torah verse, attributes as chips)
+- Created `DetailViewModel` with previous/next navigation between names
+- Created `AppNavigation` with Navigation Compose (Home → Detail)
+- Added share functionality (formatted meditation text via Android share sheet)
+- Fixed bottom navigation bar overlap with system navigation (windowInsetsPadding)
 
 ### 🔜 Day 7
 - Create `ProfileScreen` — birth date input
