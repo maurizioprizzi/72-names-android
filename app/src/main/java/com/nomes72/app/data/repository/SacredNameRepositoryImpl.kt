@@ -7,11 +7,11 @@ import com.nomes72.app.domain.model.SacredName
 import com.nomes72.app.domain.repository.SacredNameRepository
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.emitAll
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
-import kotlinx.coroutines.flow.emitAll
-import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -55,15 +55,14 @@ class SacredNameRepositoryImpl @Inject constructor(
             ?: throw IllegalStateException("Nome $nameNumber não encontrado no banco")
     }
 
-    /**
-     * Carrega os dados do JSON asset para o Room na primeira execução.
-     * Nas execuções seguintes, o banco já tem dados e pula o carregamento.
-     */
     private suspend fun ensureDataLoaded() {
         if (dao.count() > 0) return
 
+        val languageCode = context.resources.configuration.locales[0].language
+        val fileName = getJsonFileName(languageCode)
+
         val jsonString = context.assets
-            .open("sacred_names_pt.json")
+            .open(fileName)
             .bufferedReader()
             .use { it.readText() }
 
@@ -83,5 +82,21 @@ class SacredNameRepositoryImpl @Inject constructor(
         }
 
         dao.insertAll(entities)
+    }
+
+    /**
+     * Retorna o nome do arquivo JSON baseado no idioma do dispositivo.
+     * Fallback para português se o idioma não for suportado.
+     */
+    private fun getJsonFileName(languageCode: String): String {
+        return when (languageCode) {
+            "pt" -> "sacred_names_pt.json"
+            "en" -> "sacred_names_en.json"
+            "es" -> "sacred_names_es.json"
+            "fr" -> "sacred_names_fr.json"
+            "it" -> "sacred_names_it.json"
+            "de" -> "sacred_names_de.json"
+            else -> "sacred_names_en.json"
+        }
     }
 }
