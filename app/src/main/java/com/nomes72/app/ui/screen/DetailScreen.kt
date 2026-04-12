@@ -45,6 +45,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.nomes72.app.domain.model.SacredName
+import com.nomes72.app.ui.theme.HebrewFontFamily
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -202,9 +203,10 @@ private fun DetailContent(
         // Hebrew letters
         Text(
             text = name.hebrewLetters,
-            fontSize = 64.sp,
+            fontSize = 96.sp,
             fontWeight = FontWeight.Bold,
-            textAlign = TextAlign.Center
+            fontFamily = HebrewFontFamily,
+            modifier = Modifier.padding(horizontal = 12.dp)
         )
 
         Spacer(modifier = Modifier.height(8.dp))

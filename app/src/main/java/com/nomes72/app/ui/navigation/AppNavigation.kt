@@ -9,6 +9,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.nomes72.app.ui.screen.DetailScreen
 import com.nomes72.app.ui.screen.HomeScreen
+import com.nomes72.app.ui.screen.ProfileScreen
 
 @Composable
 fun AppNavigation(
@@ -22,6 +23,9 @@ fun AppNavigation(
             HomeScreen(
                 onNameClick = { number ->
                     navController.navigate("detail/$number")
+                },
+                onProfileClick = {
+                    navController.navigate("profile")
                 }
             )
         }
@@ -34,6 +38,15 @@ fun AppNavigation(
         ) {
             DetailScreen(
                 onBack = { navController.popBackStack() }
+            )
+        }
+
+        composable("profile") {
+            ProfileScreen(
+                onBack = { navController.popBackStack() },
+                onNameClick = { number ->
+                    navController.navigate("detail/$number")
+                }
             )
         }
     }
