@@ -6,5 +6,5 @@ import kotlinx.coroutines.flow.Flow
 interface SacredNameRepository {
     fun getAllNames(): Flow<List<SacredName>>
     suspend fun getNameByNumber(number: Int): SacredName?
-    suspend fun getNameOfDay(dayOfYear: Int): SacredName
+    suspend fun getNameOfDay(nameNumber: Int): SacredName
 }

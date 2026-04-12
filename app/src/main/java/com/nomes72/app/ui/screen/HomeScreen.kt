@@ -22,8 +22,8 @@ import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
-import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Person
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
@@ -42,8 +42,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.nomes72.app.ui.theme.HebrewFontFamily
+import com.nomes72.app.domain.model.DailyInsight
 import com.nomes72.app.domain.model.SacredName
+import com.nomes72.app.ui.theme.HebrewFontFamily
 
 @Composable
 fun HomeScreen(
@@ -81,6 +82,16 @@ fun HomeScreen(
 
         Spacer(modifier = Modifier.height(12.dp))
 
+        // Daily Name Card
+        uiState.dailyInsight?.let { daily ->
+            DailyNameCard(
+                dailyInsight = daily,
+                onClick = { onNameClick(daily.sacredName.number) },
+                modifier = Modifier.padding(horizontal = 16.dp)
+            )
+            Spacer(modifier = Modifier.height(12.dp))
+        }
+
         // Search
         SearchBar(
             query = uiState.searchQuery,
@@ -114,6 +125,58 @@ fun HomeScreen(
                     pages = uiState.pages,
                     totalPages = uiState.totalPages,
                     onNameClick = onNameClick
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun DailyNameCard(
+    dailyInsight: DailyInsight,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    Card(
+        modifier = modifier
+            .fillMaxWidth()
+            .clickable(onClick = onClick),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.primaryContainer
+        )
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                text = dailyInsight.sacredName.hebrewLetters,
+                fontSize = 40.sp,
+                fontWeight = FontWeight.Bold,
+                fontFamily = HebrewFontFamily
+            )
+
+            Spacer(modifier = Modifier.width(16.dp))
+
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = "Nome do Dia",
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.7f)
+                )
+                Text(
+                    text = dailyInsight.sacredName.meaning,
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.onPrimaryContainer
+                )
+                Text(
+                    text = dailyInsight.sacredName.transliteration,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.7f)
                 )
             }
         }
@@ -226,7 +289,7 @@ private fun NamesPager(
                         .size(if (isSelected) 8.dp else 6.dp)
                         .then(
                             Modifier
-                                .clickable { /* optional: animate to page */ }
+                                .clickable { }
                         )
                 ) {
                     androidx.compose.foundation.Canvas(

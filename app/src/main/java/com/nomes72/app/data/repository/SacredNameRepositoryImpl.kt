@@ -49,9 +49,8 @@ class SacredNameRepositoryImpl @Inject constructor(
         return dao.getByNumber(number)?.toDomain()
     }
 
-    override suspend fun getNameOfDay(dayOfYear: Int): SacredName {
+    override suspend fun getNameOfDay(nameNumber: Int): SacredName {
         ensureDataLoaded()
-        val nameNumber = (dayOfYear - 1) % 72 + 1
         return dao.getByNumber(nameNumber)?.toDomain()
             ?: throw IllegalStateException("Nome $nameNumber não encontrado no banco")
     }
