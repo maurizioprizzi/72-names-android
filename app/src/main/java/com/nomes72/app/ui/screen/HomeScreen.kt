@@ -45,6 +45,8 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.nomes72.app.R
 import com.nomes72.app.domain.model.DailyInsight
+import com.nomes72.app.ui.theme.PrimaryLight
+import com.nomes72.app.ui.theme.OutlineLight
 import com.nomes72.app.domain.model.SacredName
 import com.nomes72.app.ui.theme.HebrewFontFamily
 
@@ -292,9 +294,9 @@ private fun NamesPager(
                     ) {
                         drawCircle(
                             color = if (isSelected)
-                                androidx.compose.ui.graphics.Color(0xFF1A1A2E)
+                                PrimaryLight
                             else
-                                androidx.compose.ui.graphics.Color(0xFFDDDCE3)
+                                OutlineLight
                         )
                     }
                 }
