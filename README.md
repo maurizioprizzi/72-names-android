@@ -14,9 +14,11 @@ Built with Kotlin, Jetpack Compose, Clean Architecture, MVVM.
 - Share meditation texts with others
 - Daily name card based on the Kabbalistic calendar (5-day angel periods)
 - Birth date profile with personal sacred name (traditional angel calendar)
-- Multi-language support (PT, EN, ES, FR, IT, DE) via pre-translated JSON assets
+- Multi-language support (PT, EN, ES, FR, IT, DE) — content and UI fully translated
 - Automatic locale detection with English fallback
 - Traditional Hebrew font (Noto Serif Hebrew) for authentic letter display
+- Custom teal color palette with light and dark mode support
+- Custom app icon (Kabbalah Shin symbol)
 
 ---
 
@@ -101,11 +103,41 @@ app/src/main/
 │   │       └── Type.kt
 │   ├── MainActivity.kt
 │   └── NomesApp.kt
-└── res/
-    └── font/
-        ├── noto_serif_hebrew_regular.ttf
-        └── noto_serif_hebrew_bold.ttf
+├── res/
+│   ├── drawable/
+│   │   └── ic_foreground_kabbalah_shin.xml
+│   ├── font/
+│   │   ├── noto_serif_hebrew_regular.ttf
+│   │   └── noto_serif_hebrew_bold.ttf
+│   ├── mipmap-anydpi-v26/
+│   │   ├── ic_launcher.xml
+│   │   └── ic_launcher_round.xml
+│   ├── values/
+│   │   └── strings.xml (PT — default)
+│   ├── values-en/strings.xml
+│   ├── values-es/strings.xml
+│   ├── values-fr/strings.xml
+│   ├── values-it/strings.xml
+│   └── values-de/strings.xml
+└── test/
+    └── java/com/nomes72/app/
+        ├── AngelCalendarTest.kt
+        ├── GetAllNamesUseCaseTest.kt
+        ├── GetNameByNumberUseCaseTest.kt
+        └── SacredNameEntityTest.kt
 ```
+
+---
+
+## 🧪 Tests
+
+25 unit tests covering:
+- `AngelCalendar` — period boundaries, full year coverage, leap year, no gaps (14 tests)
+- `GetNameByNumberUseCase` — valid/invalid numbers, edge cases (4 tests)
+- `GetAllNamesUseCase` — full list, ordering, empty repository (3 tests)
+- `SacredNameEntity` — domain conversion, roundtrip, separator handling (4 tests)
+
+Run tests: `./gradlew test`
 
 ---
 
@@ -185,15 +217,21 @@ app/src/main/
 - Fallback to English for unsupported languages
 - All translations maintain consistent structure with PT original
 
-### 🔜 Day 10
-- UI polish — typography, colors, dark mode
-- App icon and splash screen
-- Accessibility improvements
+### ✅ Day 10 — 2026-04-12
+- Created `NomesTheme` with custom teal color palette (#147A8C) matching app icon
+- Implemented light and dark mode (follows system setting)
+- Custom app icon: Kabbalah Shin symbol on teal background
+- Internationalized all UI strings: 6 string resource files (PT, EN, ES, FR, IT, DE)
+- Replaced all hardcoded Portuguese text with `stringResource()` references
+- Updated `DetailViewModel.getShareText()` to use localized strings
 
-### 🔜 Day 11
-- Testing — unit tests for UseCases and ViewModels
-- Integration tests for Room
-- Bug fixes
+### ✅ Day 11 — 2026-04-12
+- Created 25 unit tests across 4 test classes
+- `AngelCalendarTest`: 14 tests (period boundaries, full year coverage, leap year, no gaps)
+- `GetNameByNumberUseCaseTest`: 4 tests (valid/invalid numbers, exceptions)
+- `GetAllNamesUseCaseTest`: 3 tests (full list, ordering, empty repository)
+- `SacredNameEntityTest`: 4 tests (domain conversion, roundtrip, separator handling)
+- All tests passing
 
 ### 🔜 Day 12
 - Play Store preparation — signing, ProGuard, release build
