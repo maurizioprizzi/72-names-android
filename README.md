@@ -5,16 +5,18 @@ Built with Kotlin, Jetpack Compose, Clean Architecture, MVVM.
 
 ---
 
-## 📱 Features (roadmap)
+## 📱 Features
 
 - Navigate all 72 Names with meditation texts (8 per page, swipe navigation)
 - Detail view with full meditation, attributes, Torah verse and angel name
 - Navigate between names (previous/next) directly from detail view
 - Search by meaning or transliteration
 - Share meditation texts with others
-- Daily name suggestion based on the Kabbalistic calendar
-- Birth date profile with personal insights
+- Daily name card based on the Kabbalistic calendar (5-day angel periods)
+- Birth date profile with personal sacred name (traditional angel calendar)
 - Multi-language support (PT, EN, ES, FR, IT, DE) via pre-translated JSON assets
+- Automatic locale detection with English fallback
+- Traditional Hebrew font (Noto Serif Hebrew) for authentic letter display
 
 ---
 
@@ -50,7 +52,12 @@ Dependency injection via Hilt.
 ```
 app/src/main/
 ├── assets/
-│   └── sacred_names_pt.json
+│   ├── sacred_names_pt.json
+│   ├── sacred_names_en.json
+│   ├── sacred_names_es.json
+│   ├── sacred_names_fr.json
+│   ├── sacred_names_it.json
+│   └── sacred_names_de.json
 ├── java/com/nomes72/app/
 │   ├── data/
 │   │   ├── local/
@@ -72,10 +79,12 @@ app/src/main/
 │   │   ├── repository/
 │   │   │   ├── SacredNameRepository.kt
 │   │   │   └── UserProfileRepository.kt
-│   │   └── usecase/
-│   │       ├── GetAllNamesUseCase.kt
-│   │       ├── GetDailyNameUseCase.kt
-│   │       └── GetNameByNumberUseCase.kt
+│   │   ├── usecase/
+│   │   │   ├── GetAllNamesUseCase.kt
+│   │   │   ├── GetDailyNameUseCase.kt
+│   │   │   └── GetNameByNumberUseCase.kt
+│   │   └── util/
+│   │       └── AngelCalendar.kt
 │   ├── ui/
 │   │   ├── navigation/
 │   │   │   └── AppNavigation.kt
@@ -83,7 +92,9 @@ app/src/main/
 │   │   │   ├── DetailScreen.kt
 │   │   │   ├── DetailViewModel.kt
 │   │   │   ├── HomeScreen.kt
-│   │   │   └── HomeViewModel.kt
+│   │   │   ├── HomeViewModel.kt
+│   │   │   ├── ProfileScreen.kt
+│   │   │   └── ProfileViewModel.kt
 │   │   └── theme/
 │   │       ├── Color.kt
 │   │       ├── Theme.kt
@@ -91,6 +102,9 @@ app/src/main/
 │   ├── MainActivity.kt
 │   └── NomesApp.kt
 └── res/
+    └── font/
+        ├── noto_serif_hebrew_regular.ttf
+        └── noto_serif_hebrew_bold.ttf
 ```
 
 ---
@@ -146,22 +160,30 @@ app/src/main/
 - Created `DetailViewModel` with previous/next navigation between names
 - Created `AppNavigation` with Navigation Compose (Home → Detail)
 - Added share functionality (formatted meditation text via Android share sheet)
+- Added Noto Serif Hebrew font for traditional hebrew letter styling
+- Increased hebrew letter size to 96sp in detail view
 - Fixed bottom navigation bar overlap with system navigation (windowInsetsPadding)
 
-### 🔜 Day 7
-- Create `ProfileScreen` — birth date input
-- Personal insight calculation based on birth date
-- Create `ProfileViewModel`
+### ✅ Day 7 — 2026-04-12
+- Created `ProfileScreen` with DatePicker for birth date input
+- Created `ProfileViewModel` with personal sacred name calculation
+- Implemented traditional Kabbalistic angel calendar (72 periods of ~5 days, starting March 21)
+- Corrected calculation method: from digit sum to traditional calendar periods (aligned with Ian Mecler's "A Força")
+- Added profile icon to HomeScreen header
+- Navigation: Home → Profile → Detail (tap on personal name card)
 
-### 🔜 Day 8
-- Kabbalistic calendar engine — daily Name suggestion logic
-- `CalendarScreen` — browse Names by date
-- Daily notification setup
+### ✅ Day 8 — 2026-04-12
+- Extracted `AngelCalendar` utility class to `domain/util` (shared between Profile and Daily name)
+- Added daily name card to HomeScreen (shows current period's angel)
+- Refactored `GetDailyNameUseCase` to use traditional Kabbalistic calendar
+- Simplified `ProfileViewModel` to use shared `AngelCalendar`
+- Refactored `SacredNameRepository.getNameOfDay()` to receive pre-calculated number
 
-### 🔜 Day 9
-- Multi-language support — load JSON by device locale
-- Add English, Spanish, French, Italian, German translations
-- Locale detection and fallback logic
+### ✅ Day 9 — 2026-04-12
+- Added multi-language support: EN, ES, FR, IT, DE (5 new JSON files, 72 names each)
+- Updated `SacredNameRepositoryImpl` with automatic device locale detection
+- Fallback to English for unsupported languages
+- All translations maintain consistent structure with PT original
 
 ### 🔜 Day 10
 - UI polish — typography, colors, dark mode
