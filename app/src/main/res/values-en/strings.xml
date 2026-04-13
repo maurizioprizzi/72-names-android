@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">72 Names</string>
+
+    <!-- Home Screen -->
+    <string name="home_title">72 Sacred Names</string>
+    <string name="home_search_placeholder">Search by meaning or name…</string>
+    <string name="home_search_icon">Search</string>
+    <string name="home_search_clear">Clear search</string>
+    <string name="home_page_indicator">Page %1$d of %2$d</string>
+    <string name="home_swipe_hint">Swipe to navigate →</string>
+    <string name="home_no_results">No names found</string>
+    <string name="home_daily_name">Name of the Day</string>
+    <string name="home_profile_icon">Profile</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_title">Name %1$d</string>
+    <string name="detail_loading">Loading…</string>
+    <string name="detail_back">Back</string>
+    <string name="detail_share">Share</string>
+    <string name="detail_share_chooser">Share meditation</string>
+    <string name="detail_meditation">Meditation</string>
+    <string name="detail_torah_verse">Torah Verse</string>
+    <string name="detail_attributes">Attributes</string>
+    <string name="detail_previous">Previous</string>
+    <string name="detail_next">Next</string>
+    <string name="detail_counter">%1$d / 72</string>
+    <string name="detail_angel">Angel: %1$s</string>
+    <string name="detail_error">Error loading: %1$s</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">My Profile</string>
+    <string name="profile_discover_title">Discover your Sacred Name</string>
+    <string name="profile_discover_description">Enter your birth date to reveal the Sacred Name that guides your spiritual journey.</string>
+    <string name="profile_birth_date_label">Birth date</string>
+    <string name="profile_birth_date_placeholder">MM/DD/YYYY</string>
+    <string name="profile_reveal_button">Reveal my Name</string>
+    <string name="profile_result_title">Your Sacred Name</string>
+    <string name="profile_birth_date">Birth: %1$s</string>
+    <string name="profile_name_number">Name %1$d — %2$s</string>
+    <string name="profile_tap_hint">Tap the card to see the full meditation</string>
+    <string name="profile_meaning_title">What does this mean?</string>
+    <string name="profile_meaning_description">Name %1$d (%2$s) represents the spiritual energy that accompanies your journey since birth. Meditating on this Name can help you align with your purpose and awaken latent qualities of your soul.</string>
+    <string name="profile_change_date">Change birth date</string>
+    <string name="profile_confirm">Confirm</string>
+    <string name="profile_cancel">Cancel</string>
+
+    <!-- Share text -->
+    <string name="share_header">✡ %1$s — %2$s</string>
+    <string name="share_footer">— 72 Sacred Names</string>
+
+    <!-- Daily Insight -->
+    <string name="daily_reason">Ruling name for the period including %1$s</string>
+    <string name="daily_intention">Meditate on %1$s and connect with the energy of %2$s.</string>
+</resources>

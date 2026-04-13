@@ -1,8 +1,10 @@
 package com.nomes72.app.ui.screen
 
+import android.content.Context
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.nomes72.app.R
 import com.nomes72.app.domain.model.SacredName
 import com.nomes72.app.domain.usecase.GetNameByNumberUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -63,10 +65,10 @@ class DetailViewModel @Inject constructor(
         if (currentNumber < 72) loadName(currentNumber + 1)
     }
 
-    fun getShareText(): String {
+    fun getShareText(context: Context): String {
         val name = _uiState.value.name ?: return ""
         return buildString {
-            appendLine("✡ ${name.transliteration} — ${name.meaning}")
+            appendLine(context.getString(R.string.share_header, name.transliteration, name.meaning))
             appendLine()
             appendLine(name.hebrewLetters)
             appendLine()
@@ -74,7 +76,7 @@ class DetailViewModel @Inject constructor(
             appendLine()
             appendLine("📖 ${name.torahVerse}")
             appendLine()
-            appendLine("— 72 Nomes Sagrados")
+            appendLine(context.getString(R.string.share_footer))
         }
     }
 }

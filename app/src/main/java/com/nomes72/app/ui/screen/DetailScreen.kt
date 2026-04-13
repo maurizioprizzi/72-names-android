@@ -8,16 +8,16 @@ import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.foundation.layout.WindowInsets
-import androidx.compose.foundation.layout.navigationBars
-import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowLeft
@@ -39,11 +39,13 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.nomes72.app.R
 import com.nomes72.app.domain.model.SacredName
 import com.nomes72.app.ui.theme.HebrewFontFamily
 
@@ -61,35 +63,36 @@ fun DetailScreen(
             TopAppBar(
                 title = {
                     Text(
-                        text = uiState.name?.let { "Nome ${it.number}" } ?: "Carregando..."
+                        text = uiState.name?.let { stringResource(R.string.detail_title, it.number) }
+                            ?: stringResource(R.string.detail_loading)
                     )
                 },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = "Voltar"
+                            contentDescription = stringResource(R.string.detail_back)
                         )
                     }
                 },
                 actions = {
                     IconButton(
                         onClick = {
-                            val shareText = viewModel.getShareText()
+                            val shareText = viewModel.getShareText(context)
                             if (shareText.isNotBlank()) {
                                 val intent = Intent(Intent.ACTION_SEND).apply {
                                     type = "text/plain"
                                     putExtra(Intent.EXTRA_TEXT, shareText)
                                 }
                                 context.startActivity(
-                                    Intent.createChooser(intent, "Compartilhar meditação")
+                                    Intent.createChooser(intent, context.getString(R.string.detail_share_chooser))
                                 )
                             }
                         }
                     ) {
                         Icon(
                             imageVector = Icons.Default.Share,
-                            contentDescription = "Compartilhar"
+                            contentDescription = stringResource(R.string.detail_share)
                         )
                     }
                 }
@@ -125,7 +128,7 @@ fun DetailScreen(
                     contentAlignment = Alignment.Center
                 ) {
                     Text(
-                        text = "Erro ao carregar: ${uiState.error}",
+                        text = stringResource(R.string.detail_error, uiState.error ?: ""),
                         color = MaterialTheme.colorScheme.error
                     )
                 }
@@ -163,13 +166,13 @@ private fun NavigationBar(
         ) {
             Icon(
                 imageVector = Icons.AutoMirrored.Filled.KeyboardArrowLeft,
-                contentDescription = "Anterior"
+                contentDescription = stringResource(R.string.detail_previous)
             )
-            Text("Anterior")
+            Text(stringResource(R.string.detail_previous))
         }
 
         Text(
-            text = "${currentNumber ?: "-"} / 72",
+            text = stringResource(R.string.detail_counter, currentNumber ?: 0),
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant
         )
@@ -178,10 +181,10 @@ private fun NavigationBar(
             onClick = onNext,
             enabled = hasNext
         ) {
-            Text("Próximo")
+            Text(stringResource(R.string.detail_next))
             Icon(
                 imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
-                contentDescription = "Próximo"
+                contentDescription = stringResource(R.string.detail_next)
             )
         }
     }
@@ -200,18 +203,16 @@ private fun DetailContent(
             .padding(horizontal = 24.dp, vertical = 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        // Hebrew letters
         Text(
             text = name.hebrewLetters,
             fontSize = 96.sp,
             fontWeight = FontWeight.Bold,
             fontFamily = HebrewFontFamily,
-            modifier = Modifier.padding(horizontal = 12.dp)
+            textAlign = TextAlign.Center
         )
 
         Spacer(modifier = Modifier.height(8.dp))
 
-        // Transliteration
         Text(
             text = name.transliteration,
             style = MaterialTheme.typography.titleMedium,
@@ -220,7 +221,6 @@ private fun DetailContent(
 
         Spacer(modifier = Modifier.height(4.dp))
 
-        // Meaning
         Text(
             text = name.meaning,
             style = MaterialTheme.typography.titleLarge,
@@ -228,11 +228,10 @@ private fun DetailContent(
             textAlign = TextAlign.Center
         )
 
-        // Angel name
         if (name.angelName.isNotBlank()) {
             Spacer(modifier = Modifier.height(4.dp))
             Text(
-                text = "Anjo: ${name.angelName}",
+                text = stringResource(R.string.detail_angel, name.angelName),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -240,9 +239,8 @@ private fun DetailContent(
 
         Spacer(modifier = Modifier.height(24.dp))
 
-        // Meditation section
         Text(
-            text = "Meditação",
+            text = stringResource(R.string.detail_meditation),
             style = MaterialTheme.typography.titleMedium,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.fillMaxWidth()
@@ -259,9 +257,8 @@ private fun DetailContent(
 
         Spacer(modifier = Modifier.height(24.dp))
 
-        // Torah verse
         Text(
-            text = "Versículo da Torá",
+            text = stringResource(R.string.detail_torah_verse),
             style = MaterialTheme.typography.titleMedium,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.fillMaxWidth()
@@ -278,9 +275,8 @@ private fun DetailContent(
 
         Spacer(modifier = Modifier.height(24.dp))
 
-        // Attributes
         Text(
-            text = "Atributos",
+            text = stringResource(R.string.detail_attributes),
             style = MaterialTheme.typography.titleMedium,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.fillMaxWidth()

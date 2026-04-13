@@ -42,11 +42,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.nomes72.app.R
 import com.nomes72.app.domain.model.SacredName
 import com.nomes72.app.ui.theme.HebrewFontFamily
 import java.time.Instant
@@ -66,12 +68,12 @@ fun ProfileScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Meu Perfil") },
+                title = { Text(stringResource(R.string.profile_title)) },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = "Voltar"
+                            contentDescription = stringResource(R.string.detail_back)
                         )
                     }
                 }
@@ -129,7 +131,7 @@ private fun ProfileForm(
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = "Descubra seu Nome Sagrado",
+            text = stringResource(R.string.profile_discover_title),
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center
@@ -138,7 +140,7 @@ private fun ProfileForm(
         Spacer(modifier = Modifier.height(8.dp))
 
         Text(
-            text = "Informe sua data de nascimento para revelar o Nome Sagrado que guia sua jornada espiritual.",
+            text = stringResource(R.string.profile_discover_description),
             style = MaterialTheme.typography.bodyLarge,
             textAlign = TextAlign.Center,
             color = MaterialTheme.colorScheme.onSurfaceVariant
@@ -150,8 +152,8 @@ private fun ProfileForm(
             value = selectedDate?.format(dateFormatter) ?: "",
             onValueChange = {},
             readOnly = true,
-            label = { Text("Data de nascimento") },
-            placeholder = { Text("DD/MM/AAAA") },
+            label = { Text(stringResource(R.string.profile_birth_date_label)) },
+            placeholder = { Text(stringResource(R.string.profile_birth_date_placeholder)) },
             shape = RoundedCornerShape(12.dp),
             modifier = Modifier
                 .fillMaxWidth()
@@ -168,7 +170,7 @@ private fun ProfileForm(
             shape = RoundedCornerShape(12.dp)
         ) {
             Text(
-                text = "Revelar meu Nome",
+                text = stringResource(R.string.profile_reveal_button),
                 modifier = Modifier.padding(vertical = 4.dp)
             )
         }
@@ -189,12 +191,12 @@ private fun ProfileForm(
                             showDatePicker = false
                         }
                     ) {
-                        Text("Confirmar")
+                        Text(stringResource(R.string.profile_confirm))
                     }
                 },
                 dismissButton = {
                     TextButton(onClick = { showDatePicker = false }) {
-                        Text("Cancelar")
+                        Text(stringResource(R.string.profile_cancel))
                     }
                 }
             ) {
@@ -223,7 +225,7 @@ private fun ProfileResult(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Seu Nome Sagrado",
+            text = stringResource(R.string.profile_result_title),
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold
         )
@@ -231,7 +233,7 @@ private fun ProfileResult(
         Spacer(modifier = Modifier.height(4.dp))
 
         Text(
-            text = "Nascimento: ${birthDate.format(dateFormatter)}",
+            text = stringResource(R.string.profile_birth_date, birthDate.format(dateFormatter)),
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant
         )
@@ -273,7 +275,7 @@ private fun ProfileResult(
                     Spacer(modifier = Modifier.height(4.dp))
 
                     Text(
-                        text = "Nome ${personalName.number} — ${personalName.meaning}",
+                        text = stringResource(R.string.profile_name_number, personalName.number, personalName.meaning),
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.Bold,
                         textAlign = TextAlign.Center,
@@ -283,7 +285,7 @@ private fun ProfileResult(
                     if (personalName.angelName.isNotBlank()) {
                         Spacer(modifier = Modifier.height(4.dp))
                         Text(
-                            text = "Anjo: ${personalName.angelName}",
+                            text = stringResource(R.string.detail_angel, personalName.angelName),
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.8f)
                         )
@@ -294,7 +296,7 @@ private fun ProfileResult(
             Spacer(modifier = Modifier.height(16.dp))
 
             Text(
-                text = "Toque no card para ver a meditação completa",
+                text = stringResource(R.string.profile_tap_hint),
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -312,7 +314,7 @@ private fun ProfileResult(
                     modifier = Modifier.padding(20.dp)
                 ) {
                     Text(
-                        text = "O que isso significa?",
+                        text = stringResource(R.string.profile_meaning_title),
                         style = MaterialTheme.typography.titleMedium,
                         fontWeight = FontWeight.Bold
                     )
@@ -320,10 +322,7 @@ private fun ProfileResult(
                     Spacer(modifier = Modifier.height(8.dp))
 
                     Text(
-                        text = "O Nome ${personalName.number} (${personalName.transliteration}) " +
-                                "representa a energia espiritual que acompanha sua jornada desde o nascimento. " +
-                                "Meditar sobre este Nome pode ajudar a alinhar-se com seu propósito " +
-                                "e despertar qualidades latentes da sua alma.",
+                        text = stringResource(R.string.profile_meaning_description, personalName.number, personalName.transliteration),
                         style = MaterialTheme.typography.bodyMedium,
                         lineHeight = 22.sp,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
@@ -339,7 +338,7 @@ private fun ProfileResult(
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(12.dp)
         ) {
-            Text("Alterar data de nascimento")
+            Text(stringResource(R.string.profile_change_date))
         }
     }
 }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">72 Names</string>
+
+    <!-- Home Screen -->
+    <string name="home_title">72 Nombres Sagrados</string>
+    <string name="home_search_placeholder">Buscar por significado o nombre…</string>
+    <string name="home_search_icon">Buscar</string>
+    <string name="home_search_clear">Limpiar búsqueda</string>
+    <string name="home_page_indicator">Página %1$d de %2$d</string>
+    <string name="home_swipe_hint">Desliza para navegar →</string>
+    <string name="home_no_results">Ningún nombre encontrado</string>
+    <string name="home_daily_name">Nombre del Día</string>
+    <string name="home_profile_icon">Perfil</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_title">Nombre %1$d</string>
+    <string name="detail_loading">Cargando…</string>
+    <string name="detail_back">Volver</string>
+    <string name="detail_share">Compartir</string>
+    <string name="detail_share_chooser">Compartir meditación</string>
+    <string name="detail_meditation">Meditación</string>
+    <string name="detail_torah_verse">Versículo de la Torá</string>
+    <string name="detail_attributes">Atributos</string>
+    <string name="detail_previous">Anterior</string>
+    <string name="detail_next">Siguiente</string>
+    <string name="detail_counter">%1$d / 72</string>
+    <string name="detail_angel">Ángel: %1$s</string>
+    <string name="detail_error">Error al cargar: %1$s</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">Mi Perfil</string>
+    <string name="profile_discover_title">Descubre tu Nombre Sagrado</string>
+    <string name="profile_discover_description">Ingresa tu fecha de nacimiento para revelar el Nombre Sagrado que guía tu camino espiritual.</string>
+    <string name="profile_birth_date_label">Fecha de nacimiento</string>
+    <string name="profile_birth_date_placeholder">DD/MM/AAAA</string>
+    <string name="profile_reveal_button">Revelar mi Nombre</string>
+    <string name="profile_result_title">Tu Nombre Sagrado</string>
+    <string name="profile_birth_date">Nacimiento: %1$s</string>
+    <string name="profile_name_number">Nombre %1$d — %2$s</string>
+    <string name="profile_tap_hint">Toca la tarjeta para ver la meditación completa</string>
+    <string name="profile_meaning_title">¿Qué significa esto?</string>
+    <string name="profile_meaning_description">El Nombre %1$d (%2$s) representa la energía espiritual que acompaña tu camino desde el nacimiento. Meditar sobre este Nombre puede ayudarte a alinearte con tu propósito y despertar cualidades latentes de tu alma.</string>
+    <string name="profile_change_date">Cambiar fecha de nacimiento</string>
+    <string name="profile_confirm">Confirmar</string>
+    <string name="profile_cancel">Cancelar</string>
+
+    <!-- Share text -->
+    <string name="share_header">✡ %1$s — %2$s</string>
+    <string name="share_footer">— 72 Nombres Sagrados</string>
+
+    <!-- Daily Insight -->
+    <string name="daily_reason">Nombre regente del período que incluye %1$s</string>
+    <string name="daily_intention">Medita sobre %1$s y conéctate con la energía de %2$s.</string>
+</resources>

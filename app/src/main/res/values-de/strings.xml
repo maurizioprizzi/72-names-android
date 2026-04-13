@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">72 Names</string>
+
+    <!-- Home Screen -->
+    <string name="home_title">72 Heilige Namen</string>
+    <string name="home_search_placeholder">Nach Bedeutung oder Name suchen…</string>
+    <string name="home_search_icon">Suchen</string>
+    <string name="home_search_clear">Suche löschen</string>
+    <string name="home_page_indicator">Seite %1$d von %2$d</string>
+    <string name="home_swipe_hint">Wischen zum Navigieren →</string>
+    <string name="home_no_results">Keine Namen gefunden</string>
+    <string name="home_daily_name">Name des Tages</string>
+    <string name="home_profile_icon">Profil</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_title">Name %1$d</string>
+    <string name="detail_loading">Wird geladen…</string>
+    <string name="detail_back">Zurück</string>
+    <string name="detail_share">Teilen</string>
+    <string name="detail_share_chooser">Meditation teilen</string>
+    <string name="detail_meditation">Meditation</string>
+    <string name="detail_torah_verse">Toravers</string>
+    <string name="detail_attributes">Attribute</string>
+    <string name="detail_previous">Zurück</string>
+    <string name="detail_next">Weiter</string>
+    <string name="detail_counter">%1$d / 72</string>
+    <string name="detail_angel">Engel: %1$s</string>
+    <string name="detail_error">Fehler beim Laden: %1$s</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">Mein Profil</string>
+    <string name="profile_discover_title">Entdecke deinen Heiligen Namen</string>
+    <string name="profile_discover_description">Gib dein Geburtsdatum ein, um den Heiligen Namen zu enthüllen, der deine spirituelle Reise leitet.</string>
+    <string name="profile_birth_date_label">Geburtsdatum</string>
+    <string name="profile_birth_date_placeholder">TT.MM.JJJJ</string>
+    <string name="profile_reveal_button">Meinen Namen enthüllen</string>
+    <string name="profile_result_title">Dein Heiliger Name</string>
+    <string name="profile_birth_date">Geburt: %1$s</string>
+    <string name="profile_name_number">Name %1$d — %2$s</string>
+    <string name="profile_tap_hint">Tippe auf die Karte für die vollständige Meditation</string>
+    <string name="profile_meaning_title">Was bedeutet das?</string>
+    <string name="profile_meaning_description">Der Name %1$d (%2$s) repräsentiert die spirituelle Energie, die deine Reise seit der Geburt begleitet. Über diesen Namen zu meditieren kann dir helfen, dich mit deinem Zweck auszurichten und verborgene Qualitäten deiner Seele zu erwecken.</string>
+    <string name="profile_change_date">Geburtsdatum ändern</string>
+    <string name="profile_confirm">Bestätigen</string>
+    <string name="profile_cancel">Abbrechen</string>
+
+    <!-- Share text -->
+    <string name="share_header">✡ %1$s — %2$s</string>
+    <string name="share_footer">— 72 Heilige Namen</string>
+
+    <!-- Daily Insight -->
+    <string name="daily_reason">Regierender Name für den Zeitraum einschließlich %1$s</string>
+    <string name="daily_intention">Meditiere über %1$s und verbinde dich mit der Energie von %2$s.</string>
+</resources>

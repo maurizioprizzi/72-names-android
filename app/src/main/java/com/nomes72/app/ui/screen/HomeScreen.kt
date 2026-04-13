@@ -37,11 +37,13 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.nomes72.app.R
 import com.nomes72.app.domain.model.DailyInsight
 import com.nomes72.app.domain.model.SacredName
 import com.nomes72.app.ui.theme.HebrewFontFamily
@@ -68,14 +70,14 @@ fun HomeScreen(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Text(
-                text = "72 Nomes Sagrados",
+                text = stringResource(R.string.home_title),
                 style = MaterialTheme.typography.headlineMedium,
                 fontWeight = FontWeight.Bold
             )
             IconButton(onClick = onProfileClick) {
                 Icon(
                     imageVector = Icons.Default.Person,
-                    contentDescription = "Perfil"
+                    contentDescription = stringResource(R.string.home_profile_icon)
                 )
             }
         }
@@ -163,7 +165,7 @@ private fun DailyNameCard(
 
             Column(modifier = Modifier.weight(1f)) {
                 Text(
-                    text = "Nome do Dia",
+                    text = stringResource(R.string.home_daily_name),
                     style = MaterialTheme.typography.labelMedium,
                     color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.7f)
                 )
@@ -193,11 +195,11 @@ private fun SearchBar(
     OutlinedTextField(
         value = query,
         onValueChange = onQueryChanged,
-        placeholder = { Text("Buscar por significado ou nome...") },
+        placeholder = { Text(stringResource(R.string.home_search_placeholder)) },
         leadingIcon = {
             Icon(
                 imageVector = Icons.Default.Search,
-                contentDescription = "Buscar"
+                contentDescription = stringResource(R.string.home_search_icon)
             )
         },
         trailingIcon = {
@@ -209,7 +211,7 @@ private fun SearchBar(
                 IconButton(onClick = onClear) {
                     Icon(
                         imageVector = Icons.Default.Close,
-                        contentDescription = "Limpar busca"
+                        contentDescription = stringResource(R.string.home_search_clear)
                     )
                 }
             }
@@ -231,7 +233,6 @@ private fun NamesPager(
     val pagerState = rememberPagerState(pageCount = { totalPages })
 
     Column(modifier = Modifier.fillMaxSize()) {
-        // Page indicator
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -240,18 +241,17 @@ private fun NamesPager(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Text(
-                text = "Página ${pagerState.currentPage + 1} de $totalPages",
+                text = stringResource(R.string.home_page_indicator, pagerState.currentPage + 1, totalPages),
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
             Text(
-                text = "Deslize para navegar →",
+                text = stringResource(R.string.home_swipe_hint),
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
         }
 
-        // Pager
         HorizontalPager(
             state = pagerState,
             modifier = Modifier.weight(1f)
@@ -274,7 +274,6 @@ private fun NamesPager(
             }
         }
 
-        // Dot indicators
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -287,19 +286,15 @@ private fun NamesPager(
                     modifier = Modifier
                         .padding(horizontal = 3.dp)
                         .size(if (isSelected) 8.dp else 6.dp)
-                        .then(
-                            Modifier
-                                .clickable { }
-                        )
                 ) {
                     androidx.compose.foundation.Canvas(
                         modifier = Modifier.fillMaxSize()
                     ) {
                         drawCircle(
                             color = if (isSelected)
-                                androidx.compose.ui.graphics.Color(0xFF6750A4)
+                                androidx.compose.ui.graphics.Color(0xFF1A1A2E)
                             else
-                                androidx.compose.ui.graphics.Color(0xFFCAC4D0)
+                                androidx.compose.ui.graphics.Color(0xFFDDDCE3)
                         )
                     }
                 }
@@ -321,7 +316,7 @@ private fun SearchResults(
             contentAlignment = Alignment.Center
         ) {
             Text(
-                text = "Nenhum nome encontrado",
+                text = stringResource(R.string.home_no_results),
                 style = MaterialTheme.typography.bodyLarge,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 textAlign = TextAlign.Center
@@ -368,7 +363,6 @@ private fun NameCard(
                 .padding(16.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            // Number
             Text(
                 text = "${name.number}",
                 style = MaterialTheme.typography.titleMedium,
@@ -377,7 +371,6 @@ private fun NameCard(
                 modifier = Modifier.width(32.dp)
             )
 
-            // Hebrew letters
             Text(
                 text = name.hebrewLetters,
                 fontSize = 28.sp,
@@ -386,7 +379,6 @@ private fun NameCard(
                 modifier = Modifier.padding(horizontal = 12.dp)
             )
 
-            // Meaning
             Text(
                 text = name.meaning,
                 style = MaterialTheme.typography.bodyMedium,
