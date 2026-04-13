@@ -52,4 +52,18 @@
     <!-- Daily Insight -->
     <string name="daily_reason">Regierender Name für den Zeitraum einschließlich %1$s</string>
     <string name="daily_intention">Meditiere über %1$s und verbinde dich mit der Energie von %2$s.</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">72 Heilige Namen</string>
+    <string name="onboarding_desc_1">Erhalte Zugang zur jahrtausendealten Weisheit der Kabbala durch die 72 Namen Gottes. Jeder Name trägt eine einzigartige spirituelle Energie für Meditation und Transformation.</string>
+    <string name="onboarding_title_2">Dein persönlicher Name</string>
+    <string name="onboarding_desc_2">Entdecke den Heiligen Namen, der deine Reise nach deinem Geburtsdatum leitet, gemäß dem traditionellen kabbalistischen Kalender.</string>
+    <string name="onboarding_title_3">Tägliche Meditation</string>
+    <string name="onboarding_desc_3">Empfange täglich den Namen, der den aktuellen Zeitraum regiert, und verbinde dich mit seiner Energie durch geführte Meditationen.</string>
+    <string name="onboarding_next">Weiter</string>
+    <string name="onboarding_skip">Überspringen</string>
+    <string name="onboarding_start">Loslegen</string>
+
+    <!-- Privacy Policy -->
+    <string name="privacy_policy">Datenschutzerklärung</string>
 </resources>

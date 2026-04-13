@@ -52,4 +52,18 @@
     <!-- Daily Insight -->
     <string name="daily_reason">Nombre regente del período que incluye %1$s</string>
     <string name="daily_intention">Medita sobre %1$s y conéctate con la energía de %2$s.</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">72 Nombres Sagrados</string>
+    <string name="onboarding_desc_1">Accede a la sabiduría milenaria de la Cábala a través de los 72 Nombres de Dios. Cada nombre lleva una energía espiritual única para meditación y transformación.</string>
+    <string name="onboarding_title_2">Tu Nombre Personal</string>
+    <string name="onboarding_desc_2">Descubre el Nombre Sagrado que rige tu camino según tu fecha de nacimiento, siguiendo el calendario cabalístico tradicional.</string>
+    <string name="onboarding_title_3">Meditación Diaria</string>
+    <string name="onboarding_desc_3">Recibe diariamente el Nombre que rige el período actual y conéctate con su energía a través de meditaciones guiadas.</string>
+    <string name="onboarding_next">Siguiente</string>
+    <string name="onboarding_skip">Omitir</string>
+    <string name="onboarding_start">Comenzar</string>
+
+    <!-- Privacy Policy -->
+    <string name="privacy_policy">Política de Privacidad</string>
 </resources>

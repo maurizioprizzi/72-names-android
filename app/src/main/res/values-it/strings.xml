@@ -52,4 +52,18 @@
     <!-- Daily Insight -->
     <string name="daily_reason">Nome reggente del periodo che include il %1$s</string>
     <string name="daily_intention">Medita su %1$s e connettiti con l\'energia di %2$s.</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">72 Nomi Sacri</string>
+    <string name="onboarding_desc_1">Accedi alla saggezza millenaria della Kabbalah attraverso i 72 Nomi di Dio. Ogni nome porta un\'energia spirituale unica per la meditazione e la trasformazione.</string>
+    <string name="onboarding_title_2">Il Tuo Nome Personale</string>
+    <string name="onboarding_desc_2">Scopri il Nome Sacro che guida il tuo percorso in base alla tua data di nascita, seguendo il calendario cabalistico tradizionale.</string>
+    <string name="onboarding_title_3">Meditazione Quotidiana</string>
+    <string name="onboarding_desc_3">Ricevi quotidianamente il Nome che regge il periodo attuale e connettiti con la sua energia attraverso meditazioni guidate.</string>
+    <string name="onboarding_next">Avanti</string>
+    <string name="onboarding_skip">Salta</string>
+    <string name="onboarding_start">Inizia</string>
+
+    <!-- Privacy Policy -->
+    <string name="privacy_policy">Informativa sulla Privacy</string>
 </resources>

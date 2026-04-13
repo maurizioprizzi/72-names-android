@@ -87,6 +87,9 @@ dependencies {
     // ViewModel Compose
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
+    // Spalsh screen
+    implementation(libs.androidx.splashscreen)
+
     // Debug
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)

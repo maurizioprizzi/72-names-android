@@ -52,4 +52,18 @@
     <!-- Daily Insight -->
     <string name="daily_reason">Ruling name for the period including %1$s</string>
     <string name="daily_intention">Meditate on %1$s and connect with the energy of %2$s.</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">72 Sacred Names</string>
+    <string name="onboarding_desc_1">Access the ancient wisdom of Kabbalah through the 72 Names of God. Each name carries a unique spiritual energy for meditation and transformation.</string>
+    <string name="onboarding_title_2">Your Personal Name</string>
+    <string name="onboarding_desc_2">Discover the Sacred Name that guides your journey based on your birth date, following the traditional Kabbalistic calendar.</string>
+    <string name="onboarding_title_3">Daily Meditation</string>
+    <string name="onboarding_desc_3">Receive daily the Name that rules the current period and connect with its energy through guided meditations.</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_start">Get Started</string>
+
+    <!-- Privacy Policy -->
+    <string name="privacy_policy">Privacy Policy</string>
 </resources>
