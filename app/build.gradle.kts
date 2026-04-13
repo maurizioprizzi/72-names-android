@@ -21,9 +21,19 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("/home/maurizio/72names-release-key.jks")
+            storePassword = "rsr51SDL$#"
+            keyAlias = "72names"
+            keyPassword = "rsr51SDL$#"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
