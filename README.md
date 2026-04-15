@@ -19,6 +19,12 @@ Built with Kotlin, Jetpack Compose, Clean Architecture, MVVM.
 - Traditional Hebrew font (Noto Serif Hebrew) for authentic letter display
 - Custom teal color palette with light and dark mode support
 - Custom app icon (Kabbalah Shin symbol)
+- Splash screen with app branding
+- Onboarding flow (3 pages, first launch only)
+- Animated screen transitions (slide + fade)
+- Privacy policy included
+- 100% offline — no internet required, no ads, no tracking
+- Release-ready AAB (signed, ProGuard enabled)
 
 ---
 
@@ -44,6 +50,7 @@ Dependency injection via Hilt.
 | Local DB | Room |
 | Preferences | DataStore |
 | Navigation | Navigation Compose |
+| Splash | AndroidX SplashScreen |
 | Min SDK | API 26 (Android 8.0) |
 | Compile SDK | API 35 |
 
@@ -59,7 +66,8 @@ app/src/main/
 │   ├── sacred_names_es.json
 │   ├── sacred_names_fr.json
 │   ├── sacred_names_it.json
-│   └── sacred_names_de.json
+│   ├── sacred_names_de.json
+│   └── privacy_policy.html
 ├── java/com/nomes72/app/
 │   ├── data/
 │   │   ├── local/
@@ -95,6 +103,7 @@ app/src/main/
 │   │   │   ├── DetailViewModel.kt
 │   │   │   ├── HomeScreen.kt
 │   │   │   ├── HomeViewModel.kt
+│   │   │   ├── OnboardingScreen.kt
 │   │   │   ├── ProfileScreen.kt
 │   │   │   └── ProfileViewModel.kt
 │   │   └── theme/
@@ -113,7 +122,8 @@ app/src/main/
 │   │   ├── ic_launcher.xml
 │   │   └── ic_launcher_round.xml
 │   ├── values/
-│   │   └── strings.xml (PT — default)
+│   │   ├── strings.xml (PT — default)
+│   │   └── splash.xml
 │   ├── values-en/strings.xml
 │   ├── values-es/strings.xml
 │   ├── values-fr/strings.xml
@@ -138,6 +148,15 @@ app/src/main/
 - `SacredNameEntity` — domain conversion, roundtrip, separator handling (4 tests)
 
 Run tests: `./gradlew test`
+
+---
+
+## 🚀 Build
+
+Debug: `./gradlew assembleDebug`
+Release: `./gradlew bundleRelease`
+
+Release AAB: `app/build/outputs/bundle/release/app-release.aab` (3.8MB)
 
 ---
 
@@ -233,10 +252,16 @@ Run tests: `./gradlew test`
 - `SacredNameEntityTest`: 4 tests (domain conversion, roundtrip, separator handling)
 - All tests passing
 
-### 🔜 Day 12
-- Play Store preparation — signing, ProGuard, release build
-- Store listing — screenshots, description, icon
-- First internal release 🚀
+### ✅ Day 12 — 2026-04-13
+- Added splash screen with Shin icon on teal background (AndroidX SplashScreen)
+- Created onboarding flow (3 pages with swipe, translated in 6 languages, shown only on first launch)
+- Added animated screen transitions (slide + fade) on all navigation routes
+- Created privacy policy (HTML, included in assets)
+- Generated release signing key (RSA 2048-bit, 10000 days validity)
+- Configured release build with signing and ProGuard
+- Generated first release AAB (3.8MB)
+- Prepared Play Store listing texts (EN + PT)
+- Play Store publication: on standby
 
 ---
 
