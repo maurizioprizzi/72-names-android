@@ -43,14 +43,15 @@ Dependency injection via Hilt.
 
 | Layer | Technology |
 |---|---|
-| Language | Kotlin 2.0 |
-| UI | Jetpack Compose |
+| Language | Kotlin 2.1.20 |
+| UI | Jetpack Compose (BOM 2025.05.00) |
 | Architecture | Clean Architecture + MVVM |
-| DI | Hilt |
-| Local DB | Room |
-| Preferences | DataStore |
-| Navigation | Navigation Compose |
-| Splash | AndroidX SplashScreen |
+| DI | Hilt 2.58 |
+| Local DB | Room 2.7.2 |
+| Preferences | DataStore 1.1.7 |
+| Navigation | Navigation Compose 2.9.0 |
+| Splash | AndroidX SplashScreen 1.2.0 |
+| Build | AGP 8.13.2 / Gradle 9.4.1 / KSP 2.1.20 |
 | Min SDK | API 26 (Android 8.0) |
 | Compile SDK | API 35 |
 
@@ -262,6 +263,16 @@ Release AAB: `app/build/outputs/bundle/release/app-release.aab` (3.8MB)
 - Generated first release AAB (3.8MB)
 - Prepared Play Store listing texts (EN + PT)
 - Play Store publication: on standby
+
+### ✅ Day 13 — 2026-05-26
+- Updated all dependencies to latest compatible versions:
+  Kotlin 2.1.20, KSP 2.1.20-1.0.31, Hilt 2.58, AGP 8.13.2, Gradle 9.4.1,
+  Room 2.7.2, Compose BOM 2025.05.00, Navigation 2.9.0, Lifecycle 2.9.0,
+  DataStore 1.1.7, Coroutines 1.10.1, SplashScreen 1.2.0
+- Resolved Hilt/Kotlin metadata version incompatibility
+- All 25 tests passing on updated stack
+- New release AAB generated successfully
+- Created Google Play Developer account (Maurizio Prizzi) — verification pending
 
 ---
 
