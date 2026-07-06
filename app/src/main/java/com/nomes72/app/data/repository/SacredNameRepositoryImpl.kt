@@ -57,17 +57,17 @@ class SacredNameRepositoryImpl @Inject constructor(
 
     private suspend fun ensureDataLoaded() {
         if (dao.count() > 0) return
-
         val languageCode = context.resources.configuration.locales[0].language
         val fileName = getJsonFileName(languageCode)
 
-        val jsonString = context.assets
-            .open(fileName)
-            .bufferedReader()
-            .use { it.readText() }
+        val jsonString = try {
+            context.assets.open(fileName).bufferedReader().use { it.readText() }
+        } catch (e: Exception) {
+            // Fallback para inglês se o arquivo do idioma não existir
+            context.assets.open("sacred_names_en.json").bufferedReader().use { it.readText() }
+        }
 
         val namesFromJson = json.decodeFromString<List<SacredNameJson>>(jsonString)
-
         val entities = namesFromJson.map { nameJson ->
             SacredNameEntity(
                 number = nameJson.number,
@@ -80,7 +80,6 @@ class SacredNameRepositoryImpl @Inject constructor(
                 angelName = nameJson.angelName
             )
         }
-
         dao.insertAll(entities)
     }
 
