@@ -41,19 +41,19 @@ Dependency injection via Hilt.
 
 ## 🛠️ Tech stack
 
-| Layer | Technology |
-|---|---|
-| Language | Kotlin 2.1.20 |
-| UI | Jetpack Compose (BOM 2025.05.00) |
-| Architecture | Clean Architecture + MVVM |
-| DI | Hilt 2.58 |
-| Local DB | Room 2.7.2 |
-| Preferences | DataStore 1.1.7 |
-| Navigation | Navigation Compose 2.9.0 |
-| Splash | AndroidX SplashScreen 1.2.0 |
+| Layer | Technology                             |
+|---|----------------------------------------|
+| Language | Kotlin 2.1.20                          |
+| UI | Jetpack Compose (BOM 2025.05.00)       |
+| Architecture | Clean Architecture + MVVM              |
+| DI | Hilt 2.58                              |
+| Local DB | Room 2.7.2                             |
+| Preferences | DataStore 1.1.7                        |
+| Navigation | Navigation Compose 2.9.0               |
+| Splash | AndroidX SplashScreen 1.2.0            |
 | Build | AGP 8.13.2 / Gradle 9.4.1 / KSP 2.1.20 |
-| Min SDK | API 26 (Android 8.0) |
-| Compile SDK | API 35 |
+| Min SDK | API 26 (Android 8.0)                   |
+| Compile SDK | API 36                                 |
 
 ---
 
@@ -274,6 +274,10 @@ Release AAB: `app/build/outputs/bundle/release/app-release.aab` (3.8MB)
 - New release AAB generated successfully
 - Created Google Play Developer account (Maurizio Prizzi) — verification pending
 
+### 🗓️ Day 14 — 2026-07-21
+- Updated compileSdk and targetSdk to API 36 (Android 16 compliance)
+- Resolved Edge-to-Edge display warnings on Android 15/16
+- Generated and uploaded release AAB v1.0.3 (versionCode 4) to Play Console (Closed Testing - Alpha)
 ---
 
 *Built with intention. One day at a time.* 🌟
